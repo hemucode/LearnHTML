@@ -1,0 +1,162 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+<style>
+.table1, .table1 th, .table1 td {
+  border:1px solid #282A35;
+}
+body .table1,body .table1 th,body .table1 td {
+  border:1px solid #ddd;
+}
+.table2, .table2 th, .table2 td {
+  border:1px solid #282A35;
+}
+body .table2,body .table2 th,body .table2 td {
+  border:1px solid #ddd;
+}
+.table2 td {
+  padding: 10px;
+}
+.table3, .table3 th, .table3 td {
+  border:1px solid #282A35;
+}
+.table3 {
+  border-spacing:15px;
+}
+body .table3,body .table3 th,body .table3 td {
+  border:1px solid #ddd;
+}
+.table2 {
+  float:left;
+  margin-left:15%;
+  margin-right:15%;
+}
+.table3 {
+  float:left;
+}
+@media (max-width:650px) {
+  .table2,.table3 {
+    width:60%;
+    float:none;
+    margin:auto;
+    margin-top:30px;
+    margin-bottom:30px;
+  }
+}
+
+</style>
+
+<h1>HTML <span class="color_h1">Table Padding &amp; Spacing</span></h1>
+<div class="codehemu-clear nextprev">
+
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+<a class="codehemu-left codehemu-btn" href="html_table_headers.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_table_colspan_rowspan.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">HTML tables can adjust the padding inside the cells, and also the space between the cells.</p>
+<hr>
+
+<div id="tableborders" style="overflow:auto;">
+<table class="table2">
+<caption>With Padding</caption>
+<tbody><tr>
+<td>hello</td>
+<td>hello</td>
+<td>hello</td>
+</tr>
+<tr>
+<td>hello</td>
+<td>hello</td>
+<td>hello</td>
+</tr>
+<tr>
+<td>hello</td>
+<td>hello</td>
+<td>hello</td>
+</tr>
+</tbody></table>
+<table class="table3">
+<caption>With Spacing</caption>
+<tbody><tr>
+<td>hello</td>
+<td>hello</td>
+<td>hello</td>
+</tr>
+<tr>
+<td>hello</td>
+<td>hello</td>
+<td>hello</td>
+</tr>
+<tr>
+<td>hello</td>
+<td>hello</td>
+<td>hello</td>
+</tr>
+</tbody></table>
+</div>
+<hr>
+<h2>HTML Table - Cell Padding</h2>
+<p>Cell padding is the space between the cell edges and the cell content.</p>
+<p>By default the padding is set to 0.</p>
+<p>To add padding on table cells, use the CSS <code class="codehemu-codespan">padding</code> property:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+th, td
+<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+
+</span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_cellpadding" target="_self">Try it Yourself »</a>
+</div>
+
+<p>To add padding only above the content, use the <code class="codehemu-codespan">padding-top</code> property.</p>
+<p>And the others sides with the <code class="codehemu-codespan">padding-bottom</code>, <code class="codehemu-codespan">padding-left</code>,
+and <code class="codehemu-codespan">padding-right</code> properties:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+th, td
+<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp;&nbsp;padding-top<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+&nbsp;&nbsp;padding-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 20px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+&nbsp;&nbsp;padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+&nbsp;&nbsp;padding-right<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 40px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+</span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_cellpadding2" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+
+<h2>HTML Table - Cell Spacing</h2>
+<p>Cell spacing is the space between each cell.</p>
+<p>By default the space is set to 2 pixels.</p>
+<p>To change the space between table cells, use the CSS <code class="codehemu-codespan">
+border-spacing</code> property on the <code class="codehemu-codespan">table</code> 
+element:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+  table
+<span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+&nbsp;&nbsp;border-spacing<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+  30px<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+</span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border-spacing" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_table_headers.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_table_colspan_rowspan.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

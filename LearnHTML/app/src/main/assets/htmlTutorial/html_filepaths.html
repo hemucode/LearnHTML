@@ -1,0 +1,123 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1">File Paths</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+  <a class="codehemu-left codehemu-btn" href="html_scripts.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_head.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">A file path describes the location of a file in a web site's folder structure.</p>
+<hr>
+
+<h2>File Path Examples</h2>
+<table class="ws-table-all">
+<tbody><tr ><th style="width:150px">Path</th><th>Description</th></tr>
+<tr>
+<td>&lt;img src="picture.jpg"&gt;</td>
+<td>The "picture.jpg" file is located in the same folder as the current page</td>
+</tr>
+<tr>
+<td>&lt;img src="images/picture.jpg"&gt;</td>
+<td>The "picture.jpg" file is located in the images folder in the current folder</td>
+</tr>
+<tr>
+<td>&lt;img src="/images/picture.jpg"&gt;</td>
+<td>The "picture.jpg" file is located in the images folder at the root of the current web</td>
+</tr>
+<tr>
+<td>&lt;img src="../picture.jpg"&gt;</td>
+<td>The "picture.jpg" file is located in the folder one level up from the current folder</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>HTML File Paths</h2>
+<p>A file path describes the location of a file in a web site's folder structure.</p>
+<p>File paths are used when linking to external files, like:</p>
+<ul>
+  <li>Web pages</li>
+  <li>Images</li>
+  <li>Style sheets</li>
+  <li>JavaScripts</li>
+</ul>
+<hr>
+
+<h2>Absolute File Paths</h2>
+<p>An absolute file path is the full URL to a file:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="https://www.w3schools.com/images/picture.jpg"</span> 
+  alt<span class="attributevaluecolor" style="color:mediumblue">="Mountain"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<p><a class="codehemu-btn" href="../htmlEditor/index.html?filename=tryhtml_files_absoulute" target="_self">Try it Yourself »</a></p>
+</div>
+<div class="codehemu-panel codehemu-note">
+<p>The &lt;img&gt; tag is explained in the chapter: <a href="html_images.html">HTML Images</a>.</p>
+</div>
+
+
+<h2>Relative File Paths</h2>
+<p>A relative file path points to a file relative to the current page.</p>
+<p>In the following example, the file path points to a file in the images folder located 
+at the root of the current web:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="/images/picture.jpg"</span> 
+alt<span class="attributevaluecolor" style="color:mediumblue">="Mountain"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<p><a class="codehemu-btn" href="../htmlEditor/index.html?filename=tryhtml_files_relative" target="_self">Try it Yourself »</a></p>
+</div>
+
+<p>In the following example, the file path points to a file in the images folder located in the 
+current folder:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="images/picture.jpg"</span> 
+alt<span class="attributevaluecolor" style="color:mediumblue">="Mountain"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+<p>
+
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn ">❏ Copy</button>
+<a class="codehemu-btn" href="../htmlEditor/index.html?filename=tryhtml_files_relative_1" target="_self">Try it Yourself »</a></p>
+</div>
+
+<p>In the following example, the file path points to a file in the images folder located in the 
+folder one level up from the current folder:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="../images/picture.jpg"</span> 
+alt<span class="attributevaluecolor" style="color:mediumblue">="Mountain"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+<p>
+
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn ">❏ Copy</button>
+<a class="codehemu-btn" href="../htmlEditor/index.html?filename=tryhtml_files_relative_2" target="_self">Try it Yourself »</a></p>
+</div>
+<hr>
+
+<h2>Best Practice</h2>
+<p>It is best practice to use relative file paths (if possible).</p>
+<p>When using relative file paths, your web pages will not be bound to your current 
+base URL. All links will work on your own computer (localhost) as well as on 
+your current public domain and your future public domains.</p>
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html_scripts.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_head.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

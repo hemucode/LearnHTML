@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Learn HTML</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="App_ID">ca-app-pub-3494707665933635~8523823433</string>
+    <string name="Banner_Ads_1">ca-app-pub-3494707665933635/3390878262</string>
+    <string name="short_text">New short post on coding related.</string>
+    <string name="shorts">Shorts</string>
+    <string name="learn">Learn HTML</string>
+    <string name="html_text">Easy Learning with HTML Try it Yourself</string>
+    <string name="more">More</string>
+    <string name="application">Application</string>
+    <string name="more_app_text">Stay connected with us more programming apps. Thank you!</string>
+    <string name="html_editor">HTML Editor</string>
+    <string name="html_editors">HTML Editor. With our offline HTML editor, you can edit HTML, CSS and JavaScript code.</string>
+    <string name="text_tutorial">HTML Tutorial</string>
+    <string name="tutorial_url">file:///android_asset/htmlTutorial/main_manu.html</string>
+    <string name="editor_url">file:///android_asset/htmlEditor/index.html</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="share">Share</string>
+    <string name="rate_update">Rate/Update</string>
+    <string name="home">Home</string>
+    <string name="more_app">More App</string>
+    <string name="download_it">" - Go to the link below to download the app\n\n"</string>
+</resources>

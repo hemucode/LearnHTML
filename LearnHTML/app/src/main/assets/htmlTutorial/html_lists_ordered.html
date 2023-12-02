@@ -1,0 +1,197 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1">Ordered Lists</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+  <a class="codehemu-left codehemu-btn" href="html_lists_unordered.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_lists_other.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">The HTML <code class="codehemu-codespan">&lt;ol&gt;</code> tag defines an ordered list. An 
+ordered list can be numerical or alphabetical.</p>
+<hr>
+
+<h2>Ordered HTML List</h2>
+<p>An ordered list starts with the <code class="codehemu-codespan">&lt;ol&gt;</code> tag. Each list item starts with the <code class="codehemu-codespan">&lt;li&gt;</code> tag.</p>
+<p>The list items will be marked with numbers by default:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_ordered2" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Ordered HTML List - The Type Attribute</h2>
+<p>The <code class="codehemu-codespan">type</code> attribute of the <code class="codehemu-codespan">&lt;ol&gt;</code> tag, defines the type of the 
+list item marker:</p>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th>Type</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>type="1"</td>
+<td>The list items will be numbered with numbers (default)</td>
+</tr>
+<tr>
+<td>type="A"</td>
+<td>The list items will be numbered with uppercase letters</td>
+</tr>
+<tr>
+<td>type="a"</td>
+<td>The list items will be numbered with lowercase letters</td>
+</tr>
+<tr>
+<td>type="I"</td>
+<td>The list items will be numbered with uppercase roman numbers</td>
+</tr>
+<tr>
+<td>type="i"</td>
+<td>The list items will be numbered with lowercase roman numbers</td>
+</tr>
+</tbody></table>
+
+<div class="codehemu-example">
+<h3>Numbers:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_ordered_numbers" target="_self">Try it Yourself »</a>
+</div>
+<div class="codehemu-example">
+<h3>Uppercase Letters:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="A"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_ordered_ucase" target="_self">Try it Yourself »</a>
+</div>
+<div class="codehemu-example">
+<h3>Lowercase Letters:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="a"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_ordered_lcase" target="_self">Try it Yourself »</a>
+</div>
+<div class="codehemu-example">
+<h3>Uppercase Roman Numbers:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="I"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_ordered_roman_ucase" target="_self">Try it Yourself »</a>
+</div>
+<div class="codehemu-example">
+<h3>Lowercase Roman Numbers:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="i"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_ordered_roman_lcase" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<hr>
+<h2>Control List Counting</h2>
+<p>By default, an ordered list will start counting from 1. If you want to start counting from a specified number, you can use the <code class="codehemu-codespan">start</code> attribute:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="attributecolor" style="color:red"> start<span class="attributevaluecolor" style="color:mediumblue">="50"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_start" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Nested HTML Lists</h2>
+<p>Lists can be nested (list inside list):</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Coffee<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tea<br>
+&nbsp; &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; &nbsp; 
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Black tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Green tea<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ol<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[7])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_lists_nested_ol" target="_self">Try it Yourself »</a>
+</div>
+
+<div class="codehemu-panel codehemu-note">
+  <p><strong>Note:</strong> A list item (<code class="codehemu-codespan">&lt;li&gt;</code>) can contain 
+  a new list, and other HTML elements, like images and links, etc.</p>
+</div>
+<hr>
+
+<h2>Chapter Summary</h2>
+<ul>
+  <li>Use the HTML <code class="codehemu-codespan">&lt;ol&gt;</code> element to define an ordered list</li>
+  <li>Use the HTML <code class="codehemu-codespan">type</code> attribute to define the numbering type</li>
+  <li>Use the HTML <code class="codehemu-codespan">&lt;li&gt;</code> element to define a list item</li>
+  <li>Lists can be nested</li>
+  <li>List items can contain other HTML elements</li>
+</ul>
+<hr>
+
+
+<h2>HTML List Tags</h2>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a>&lt;ul&gt;</a></td>
+<td>Defines an unordered list</td>
+</tr>
+<tr>
+<td><a>&lt;ol&gt;</a></td>
+<td>Defines an ordered list</td>
+</tr>
+<tr>
+<td><a>&lt;li&gt;</a></td>
+<td>Defines a list item</td>
+</tr>
+<tr>
+<td><a>&lt;dl&gt;</a></td>
+<td>Defines a description list</td>
+</tr>
+<tr>
+<td><a>&lt;dt&gt;</a></td>
+<td>Defines a term in a description list</td>
+</tr>
+<tr>
+<td><a>&lt;dd&gt;</a></td>
+<td>Describes the term in a description list</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html_lists_unordered.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_lists_other.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

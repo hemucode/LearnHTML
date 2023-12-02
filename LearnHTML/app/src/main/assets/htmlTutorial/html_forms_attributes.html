@@ -1,0 +1,204 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1">Form Attributes</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+	
+  <a class="codehemu-left codehemu-btn" href="html_forms.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_form_elements.html">Next ❯</a>
+</div>
+<hr>
+
+<p class="intro">This chapter describes the different attributes for the HTML <code class="codehemu-codespan">&lt;form&gt;</code> element. </p>
+<hr>
+
+
+<h2>The Action Attribute</h2>
+<p>The <code class="codehemu-codespan">action</code> attribute defines the action to be performed when the form is submitted.</p>
+<p>Usually, the form data is sent to a file on the server when the user clicks on the submit button.</p>
+<p>In the example below, the form data is sent to a file called "action_page.php". 
+This file contains a server-side script that handles the form data:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>On submit, send form data to "action_page.php":</p>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
+  name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<p><strong>Tip:</strong> If the <code class="codehemu-codespan">action</code> attribute is omitted, the action is set to the current page.</p>
+<hr>
+
+<h2>The Target Attribute</h2>
+<p>The <code class="codehemu-codespan">target</code> attribute specifies where to 
+display the response that is received after submitting the form.</p>
+<p>The <code class="codehemu-codespan">target</code> attribute can have one of the 
+following values:</p>
+<table class="ws-table-all notranslate"> 
+  <tbody><tr>
+    <th style="width:20%">Value</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>_blank</td>
+    <td>The response is displayed in a new window or tab</td>
+  </tr>
+  <tr>
+    <td>_self</td>
+    <td>The response is displayed in the current window</td>
+  </tr>
+  <tr>
+    <td>_parent</td>
+    <td>The response is displayed in the parent frame</td>
+  </tr>
+  <tr>
+    <td>_top</td>
+    <td>The response is displayed in the full body of the window</td>
+  </tr>
+  <tr>
+    <td><i>framename</i></td>
+    <td>The response is displayed in a named iframe</td>
+  </tr>
+  </tbody></table>
+<p>The default value is <code class="codehemu-codespan">_self</code> which means that 
+the response will open in the current window.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>Here, the submitted result will open in a new browser tab:</p>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> target<span class="attributevaluecolor" style="color:mediumblue">="_blank"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<hr>
+
+<h2>The Method Attribute</h2>
+<p>The <code class="codehemu-codespan">method</code> attribute specifies the HTTP 
+method to be used when submitting the form data.</p>
+<p>The form-data can be sent as URL variables (with <code class="codehemu-codespan">method="get"</code>) 
+or as HTTP post transaction (with <code class="codehemu-codespan">method="post"</code>).</p>
+<p>The default HTTP method when submitting form data is GET.&nbsp;</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>This example uses the GET method when submitting the form data:</p>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="get"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>This example uses the POST method when submitting the form data:</p>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> method<span class="attributevaluecolor" style="color:mediumblue">="post"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<p><b>Notes on GET:</b> </p>
+<ul>
+  <li>Appends the form data to the URL, in name/value pairs</li>
+  <li>NEVER use GET to send sensitive data! (the submitted form data is visible in the URL!)</li>
+  <li>The length of a URL is limited (2048 characters)</li>
+  <li>Useful for form submissions where a user wants to bookmark the result</li>
+  <li>GET is good for non-secure data, like query strings in Google</li>
+</ul>
+<p><b>Notes on POST:</b> </p>
+<ul>
+  <li>Appends the form data inside the body of the HTTP request (the submitted 
+  form data is not shown in the URL)</li>
+  <li>POST has no size limitations, and can be used to send large amounts of data.</li>
+  <li>Form submissions with POST cannot be bookmarked</li>
+</ul>
+<div class="codehemu-panel codehemu-note">
+<p><strong>Tip:</strong> Always use POST if the form data contains sensitive or personal information!</p>
+</div>
+
+<hr>
+
+<h2>The Autocomplete Attribute</h2>
+<p>The <code class="codehemu-codespan">autocomplete</code> attribute specifies whether 
+a form should have autocomplete on or off.</p>
+<p>When autocomplete is on, the browser automatically complete values based on values that the user has entered before.</p>
+<div class="codehemu-example">
+  <h3>Example</h3>
+  <p>A form with autocomplete on:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> autocomplete<span class="attributevaluecolor" style="color:mediumblue">="on"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<hr>
+
+<h2>The Novalidate Attribute</h2>
+<p>The <code class="codehemu-codespan">novalidate</code> attribute is a boolean attribute.</p>
+<p>When present, it specifies that the form-data (input) should not be validated when submitted.</p>
+<div class="codehemu-example">
+  <h3>Example</h3>
+  <p>A form with a novalidate attribute:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span> novalidate</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<hr>
+
+
+
+<h2>List of All &lt;form&gt; Attributes</h2>
+<div class="codehemu-responsive">
+<table class="ws-table-all">
+ <tbody><tr>
+  <th>Attribute</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td><a>accept-charset</a></td>
+  <td>Specifies the character encodings used for form submission</td>
+ </tr>
+ <tr>
+  <td><a>action</a></td>
+  <td>Specifies where to send the form-data when a form is submitted</td>
+ </tr>
+ <tr>
+  <td><a>autocomplete</a></td>
+  <td>Specifies whether a form should have autocomplete on or off</td>
+ </tr>
+ <tr>
+  <td><a>enctype</a></td>
+  <td>Specifies how the form-data should be encoded when submitting it to the 
+  server (only for method="post")</td>
+ </tr>
+ <tr>
+  <td><a>method</a></td>
+  <td>Specifies the HTTP method to use when sending form-data</td>
+ </tr>
+ <tr>
+  <td><a>name</a></td>
+  <td>Specifies the name of the form</td>
+ </tr>
+ <tr>
+  <td><a>novalidate</a></td>
+  <td>Specifies that the form should not be validated when submitted</td>
+ </tr>
+ <tr>
+  <td><a>rel</a></td>
+  <td>Specifies the relationship between a linked resource and the current 
+  document</td>
+ </tr>
+ <tr>
+  <td><a>target</a></td>
+  <td>Specifies where to display the response that is received after submitting 
+  the form</td>
+ </tr>
+</tbody></table>
+</div>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html_forms.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_form_elements.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

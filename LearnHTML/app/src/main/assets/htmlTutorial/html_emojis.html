@@ -1,0 +1,166 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+<h1>Using Emojis in HTML</h1>
+<div class="codehemu-clear nextprev">
+	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+<a class="codehemu-left codehemu-btn" href="html_symbols.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_charset.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">Emojis are characters from the UTF-8 character set: 😄 😍 💗</p>
+<hr>
+
+<div class="codehemu-responsive">
+<table class="ws-table-all">
+<tbody><tr>
+<th>Emoji</th>
+<th>Value</th>
+<th></th>
+</tr>
+<tr><td>🗻</td><td>&amp;#128507;</td><td></td></tr><tr><td>🗼</td><td>&amp;#128508;</td><td></td></tr><tr><td>🗽</td><td>&amp;#128509;</td><td></td></tr><tr><td>🗾</td><td>&amp;#128510;</td><td></td></tr><tr><td>🗿</td><td>&amp;#128511;</td><td></td></tr><tr><td>😀</td><td>&amp;#128512;</td><td></td></tr><tr><td>😁</td><td>&amp;#128513;</td><td></td></tr><tr><td>😂</td><td>&amp;#128514;</td><td></td></tr><tr><td>😃</td><td>&amp;#128515;</td><td></td></tr><tr><td>😄</td><td>&amp;#128516;</td><td></td></tr><tr><td>😅</td><td>&amp;#128517;</td><td></td></tr>
+</tbody></table>
+</div>
+
+<hr>
+
+<h2>HTML Emojis Examples</h2>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh codehemu-xxlarge">
+🚀🚁🚂🚃🚄
+ </div>
+</div>
+
+
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh codehemu-xxlarge">
+💺💻💼💽💾
+ </div>
+</div>
+
+
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh codehemu-xxlarge">
+👮👯👰👱👲
+ </div>
+</div>
+
+
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh codehemu-xxlarge">
+🐂🐃🐄🐅🐆
+ </div>
+</div>
+
+
+<hr>
+<h2>What are Emojis?</h2>
+<p>Emojis look like images, or icons, but they are not.</p>
+<p>They are letters (characters) from the UTF-8 (Unicode) character set.</p>
+
+<div class="codehemu-panel codehemu-note">
+<p>UTF-8 covers almost all of the characters and symbols in the world.</p>
+</div>
+
+<hr>
+
+<h2>The HTML charset Attribute</h2>
+<p>To display an HTML page correctly, a web browser must know the character set used in the page.</p>
+<p>This is specified in the <code class="codehemu-codespan">&lt;meta&gt;</code> tag:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<div class="codehemu-panel codehemu-note">
+<p>If not specified, UTF-8 is the default character set in HTML.</p>
+</div>
+
+<hr>
+<h2>UTF-8 Characters</h2>
+<p>Many UTF-8 characters cannot be typed on a keyboard,
+but they can always be displayed using numbers (called entity numbers):</p>
+<ul>
+<li>A is 65</li>
+<li>B is 66</li>
+<li>C is 67</li>
+</ul>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>I will display A B C<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>I will display &amp;#65; &amp;#66; &amp;#67;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_emojis_utf8" target="_self">Try it Yourself »</a>
+</div>
+
+<h3>Example Explained</h3>
+<p>The <code class="codehemu-codespan">&lt;meta charset="UTF-8"&gt;</code> element defines the character set.</p>
+<p>The characters A, B, and C, are displayed by the numbers 65, 66, and 67.</p>
+<p>To let the browser understand that you are displaying a character, you must start the entity number
+with &amp;# and end it with ; (semicolon).</p>
+
+
+<hr>
+
+<h2>Emoji Characters</h2>
+<p>Emojis are also characters from the UTF-8 alphabet:</p>
+<ul>
+<li>😄 is 128516</li>
+<li>😍 is 128525</li>
+<li>💗 is 128151</li>
+</ul>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Emoji<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>&amp;#128512;<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_emojis" target="_self">Try it Yourself »</a>
+</div>
+
+<p>Since Emojis are characters, they can be copied, displayed,
+and sized just like any other character in HTML.</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Sized Emojis<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="font-size:48px"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&amp;#128512; &amp;#128516; &amp;#128525; &amp;#128151;<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[7])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_emojis_size" target="_self">Try it Yourself »</a>
+</div>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_symbols.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_charset.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

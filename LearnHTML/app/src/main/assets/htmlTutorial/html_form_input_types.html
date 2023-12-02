@@ -1,0 +1,588 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+<h1>HTML <span class="color_h1">Input Types</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_form_elements.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_form_attributes.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">This chapter describes the different types for the HTML <code class="codehemu-codespan">&lt;input&gt;</code> element. </p>
+<hr>
+
+<h2>HTML Input Types</h2>
+<p>Here are the different input types you can use in HTML:</p>
+<ul>
+  <li><code class="codehemu-codespan">&lt;input type="button"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="checkbox"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="color"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="date"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="datetime-local"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="email"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="file"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="hidden"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="image"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="month"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="number"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="password"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="radio"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="range"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="reset"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="search"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="submit"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="tel"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="text"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="time"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="url"&gt;</code></li>
+  <li><code class="codehemu-codespan">&lt;input type="week"&gt;</code></li>
+</ul>
+
+<div class="codehemu-panel codehemu-note">
+<p><strong>Tip:</strong> The default value of the <code class="codehemu-codespan">type</code> attribute 
+is 
+"text".</p>
+</div>
+<hr>
+
+<h2>Input Type Text</h2>
+<p><code class="codehemu-codespan">&lt;input type="text"&gt;</code> defines a <strong>
+single-line text input field</strong>:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last 
+  name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_text" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+First name:<br>
+<input type="text"><br>
+Last name:<br>
+<input type="text"><br>
+<hr>
+
+<h2>Input Type Password</h2>
+<p><code class="codehemu-codespan">&lt;input type="password"&gt;</code> defines a <strong>password field</strong>:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="username"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Username:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> 
+  id<span class="attributevaluecolor" style="color:mediumblue">="username"</span> name<span class="attributevaluecolor" style="color:mediumblue">="username"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="pwd"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Password:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="password"</span> id<span class="attributevaluecolor" style="color:mediumblue">="pwd"</span> name<span class="attributevaluecolor" style="color:mediumblue">="pwd"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_password" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+Username:<br>
+<input type="text"><br>
+Password:<br>
+<input type="password">
+<div class="codehemu-panel codehemu-note">
+<p>The characters in a password field are masked (shown as asterisks or circles).
+</p>
+</div>
+
+<hr>
+<h2>Input Type Submit</h2>
+<p><code class="codehemu-codespan">&lt;input type="submit"&gt;</code> defines a button for <strong>
+submitting</strong> form data to a <strong>form-handler</strong>.</p>
+<p>The form-handler is typically a server page with a script for processing 
+input data.</p>
+<p>The form-handler is specified in the form's <code class="codehemu-codespan">action</code> 
+attribute:</p>
+<div class="codehemu-example">
+ <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
+  name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_submit" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="/action_page.php" target="_self">
+First name:<br>
+<input type="text" name="firstname" value="John"><br>
+Last name:<br>
+<input type="text" name="lastname" value="Doe">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+<p>If you omit the submit button's value attribute, the button will get a default text:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
+  name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_submit_nn" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Type Reset</h2>
+<p><code class="codehemu-codespan">&lt;input type="reset"&gt;</code> defines a <strong>reset button</strong> 
+that will reset all form values to their default values:</p>
+<div class="codehemu-example">
+ <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
+  name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="John"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="reset"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="Reset"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_reset" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="/action_page.php" target="_self">
+First name:<br>
+<input type="text" name="firstname0" value="John"><br>
+Last name:<br>
+<input type="text" name="lastname0" value="Doe">
+<br><br>
+<input type="submit" value="Submit">
+<input type="reset" value="Reset">
+</form>
+<div class="codehemu-note codehemu-panel">
+<p>If you change the input values and then click the "Reset" button, the form-data will be reset to the default values.</p>
+</div>
+<hr>
+
+<h2>Input Type Radio</h2>
+<p><code class="codehemu-codespan">&lt;input type="radio"&gt;</code> defines a <strong>radio button</strong>.</p>
+<p>Radio buttons let a user select ONLY ONE of a limited number of choices:</p>
+<div class="codehemu-example">
+ <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Choose your favorite Web language:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> id<span class="attributevaluecolor" style="color:mediumblue">="html"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fav_language"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="HTML"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="html"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> id<span class="attributevaluecolor" style="color:mediumblue">="css"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fav_language"</span> value<span class="attributevaluecolor" style="color:mediumblue">="CSS"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> 
+  for<span class="attributevaluecolor" style="color:mediumblue">="css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="radio"</span> id<span class="attributevaluecolor" style="color:mediumblue">="javascript"</span> 
+  name<span class="attributevaluecolor" style="color:mediumblue">="fav_language"</span> value<span class="attributevaluecolor" style="color:mediumblue">="JavaScript"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="javascript"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_radio" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="radio" id="html" name="fav_language" value="HTML">
+<label for="html">HTML</label><br>
+<input type="radio" id="css" name="fav_language" value="CSS">
+<label for="css">CSS</label><br>
+<input type="radio" id="javascript" name="fav_language" value="JavaScript">
+<label for="javascript">JavaScript</label>
+<hr>
+
+<h2>Input Type Checkbox</h2>
+<p><code class="codehemu-codespan">&lt;input type="checkbox"&gt;</code> defines a <strong>checkbox</strong>.</p>
+<p>Checkboxes let a user select ZERO or MORE options of a limited number of choices.</p>
+<div class="codehemu-example">
+ <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> id<span class="attributevaluecolor" style="color:mediumblue">="vehicle1"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle1"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Bike"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="vehicle1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> I have a bike<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> id<span class="attributevaluecolor" style="color:mediumblue">="vehicle2"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle2"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Car"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="vehicle2"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> 
+  I have a car<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> 
+  id<span class="attributevaluecolor" style="color:mediumblue">="vehicle3"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle3"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="Boat"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="vehicle3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> I have a boat<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_checkbox2" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+<label for="vehicle1"> I have a bike</label><br>
+<input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+<label for="vehicle2"> I have a car</label><br>
+<input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+<label for="vehicle3"> I have a boat</label>
+<hr>
+
+<h2>Input Type Button</h2>
+<p><code class="codehemu-codespan">&lt;input type="button"&gt;</code> defines a <strong>button</strong>:</p>
+<div class="codehemu-example">
+ <h3>Example</h3>
+ <div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="button"</span> onclick<span class="attributevaluecolor" style="color:mediumblue">="alert('Hello World!')"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Click Me!"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[7])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_button" target="_self">Try it Yourself »</a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="button" onclick="alert('Hello World!')" value="Click Me!"> 
+<hr>
+
+<h2>Input Type Color</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="color"&gt;</code> is used for input fields that should contain a color.</p>
+<p>Depending on browser support, a color picker can show up in the input field.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="favcolor"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Select your favorite 
+  color:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="color"</span> id<span class="attributevaluecolor" style="color:mediumblue">="favcolor"</span> name<span class="attributevaluecolor" style="color:mediumblue">="favcolor"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[8])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_color" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Type Date</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="date"&gt;</code> is used for input fields that should contain a date.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="birthday"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Birthday:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> id<span class="attributevaluecolor" style="color:mediumblue">="birthday"</span> name<span class="attributevaluecolor" style="color:mediumblue">="birthday"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[9])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_date" target="_self">Try it Yourself »</a> 
+</div>
+
+<p>You can also use the <code class="codehemu-codespan">min</code> and <code class="codehemu-codespan">max</code> attributes to add restrictions to dates:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="datemax"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Enter a date before 
+  1980-01-01:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> id<span class="attributevaluecolor" style="color:mediumblue">="datemax"</span> name<span class="attributevaluecolor" style="color:mediumblue">="datemax"</span> 
+  max<span class="attributevaluecolor" style="color:mediumblue">="1979-12-31"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="datemin"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Enter a date after 
+  2000-01-01:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="date"</span> id<span class="attributevaluecolor" style="color:mediumblue">="datemin"</span> name<span class="attributevaluecolor" style="color:mediumblue">="datemin"</span> 
+  min<span class="attributevaluecolor" style="color:mediumblue">="2000-01-02"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[10])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_date_max_min" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type Datetime-local</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="datetime-local"&gt;</code> specifies 
+a date and time input field, with no time zone.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="birthdaytime"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Birthday (date and 
+  time):<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="datetime-local"</span> id<span class="attributevaluecolor" style="color:mediumblue">="birthdaytime"</span> name<span class="attributevaluecolor" style="color:mediumblue">="birthdaytime"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[11])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_datetime-local" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type Email</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="email"&gt;</code> is used for input fields that should contain an e-mail address.</p>
+<p>Depending on browser support, the e-mail address can be automatically validated when submitted.</p>
+<p>Some smartphones recognize the email type, and add ".com" to the keyboard to match email input.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Enter your email:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="email"</span> id<span class="attributevaluecolor" style="color:mediumblue">="email"</span> name<span class="attributevaluecolor" style="color:mediumblue">="email"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[12])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_email" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type Image</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="image"&gt;</code> 
+defines an image as a submit button.</p>
+<p>The path to the image is specified in the <code class="codehemu-codespan">src</code> attribute.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="image"</span> src<span class="attributevaluecolor" style="color:mediumblue">="img_submit.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span> 
+  width<span class="attributevaluecolor" style="color:mediumblue">="48"</span> height<span class="attributevaluecolor" style="color:mediumblue">="48"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[13])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_image" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type File</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="file"&gt;</code> 
+defines a file-select field and a "Browse" button for file uploads.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="myfile"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Select a file:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="file"</span> id<span class="attributevaluecolor" style="color:mediumblue">="myfile"</span> name<span class="attributevaluecolor" style="color:mediumblue">="myfile"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[14])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_file" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+
+<h2>Input Type Hidden</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="hidden"&gt;</code> 
+defines a hidden input field (not visible to a user).</p>
+<p>A hidden field lets web developers include data that cannot be seen or 
+modified by users when a form is submitted.</p>
+<p>A hidden field often stores what database record that needs to be updated 
+when the form is submitted.</p>
+<p><strong>Note:</strong> While the value is not displayed to the user in the 
+page's content, it is visible (and can be edited) using any browser's developer 
+tools or "View Source" functionality. Do not use hidden inputs as a form of 
+security!</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="hidden"</span> id<span class="attributevaluecolor" style="color:mediumblue">="custId"</span> name<span class="attributevaluecolor" style="color:mediumblue">="custId"</span> value<span class="attributevaluecolor" style="color:mediumblue">="3487"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[15])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_hidden" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+
+<h2>Input Type Month</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="month"&gt;</code> allows the user to select a month and year.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="bdaymonth"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Birthday (month and 
+  year):<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="month"</span> id<span class="attributevaluecolor" style="color:mediumblue">="bdaymonth"</span> name<span class="attributevaluecolor" style="color:mediumblue">="bdaymonth"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[16])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_month" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type Number</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="number"&gt;</code> defines a <strong>
+numeric</strong> input field.</p>
+<p>You can also set restrictions on what numbers are accepted.</p>
+<p>The following example displays a numeric input field, where you can enter a value from 1 to 5:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Quantity (between 1 and 
+  5):<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> id<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> name<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> 
+  min<span class="attributevaluecolor" style="color:mediumblue">="1"</span> max<span class="attributevaluecolor" style="color:mediumblue">="5"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[17])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_number" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Restrictions</h2>
+<p>Here is a list of some common input restrictions:</p>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Attribute</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>checked</td>
+<td>Specifies that an input field should be pre-selected when the page loads (for type="checkbox" or type="radio")</td>
+</tr>
+<tr>
+<td>disabled</td>
+<td>Specifies that an input field should be disabled</td>
+</tr>
+<tr>
+<td>max</td>
+<td>Specifies the maximum value for an input field</td>
+</tr>
+<tr>
+<td>maxlength</td>
+<td>Specifies the maximum number of character for an input field</td>
+</tr>
+<tr>
+<td>min</td>
+<td>Specifies the minimum value for an input field</td>
+</tr>
+<tr>
+<td>pattern</td>
+<td>Specifies a regular expression to check the input value against</td>
+</tr>
+<tr>
+<td>readonly</td>
+<td>Specifies that an input field is read only (cannot be changed)</td>
+</tr>
+<tr>
+<td>required</td>
+<td>Specifies that an input field is required (must be filled out)</td>
+</tr>
+<tr>
+<td>size</td>
+<td>Specifies the width (in characters) of an input field</td>
+</tr>
+<tr>
+<td>step</td>
+<td>Specifies the legal number intervals for an input field</td>
+</tr>
+<tr>
+<td>value</td>
+<td>Specifies the default value for an input field</td>
+</tr>
+</tbody></table>
+<p>
+You will learn more about input restrictions in the next chapter.</p>
+<p>
+The following example displays a numeric input field, where you can enter a 
+value from 0 to 100, in steps of 10. The default value is 30:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Quantity:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> 
+  type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> id<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> name<span class="attributevaluecolor" style="color:mediumblue">="quantity"</span> min<span class="attributevaluecolor" style="color:mediumblue">="0"</span> max<span class="attributevaluecolor" style="color:mediumblue">="100"</span> step<span class="attributevaluecolor" style="color:mediumblue">="10"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="30"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[18])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_number_step" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Type Range</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="range"&gt;</code> defines a control for entering a number whose exact value is not important (like a slider control). Default 
+range is 0 to 100. However, you can set restrictions on what 
+numbers are accepted with the <code class="codehemu-codespan">min</code>, <code class="codehemu-codespan">max</code>, and <code class="codehemu-codespan">step</code> attributes:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="vol"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Volume (between 0 and 50):<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="range"</span> id<span class="attributevaluecolor" style="color:mediumblue">="vol"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vol"</span> min<span class="attributevaluecolor" style="color:mediumblue">="0"</span> max<span class="attributevaluecolor" style="color:mediumblue">="50"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[19])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_range" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Type Search</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="search"&gt;</code> is used for search fields (a search field behaves like a regular text field).</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="gsearch"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Search Google:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="search"</span> id<span class="attributevaluecolor" style="color:mediumblue">="gsearch"</span> name<span class="attributevaluecolor" style="color:mediumblue">="gsearch"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[20])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_search" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type Tel</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="tel"&gt;</code> is used for input fields that should contain a telephone number.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="phone"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Enter your phone number:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="tel"</span> id<span class="attributevaluecolor" style="color:mediumblue">="phone"</span> name<span class="attributevaluecolor" style="color:mediumblue">="phone"</span> 
+    pattern<span class="attributevaluecolor" style="color:mediumblue">="[0-9]{3}-[0-9]{2}-[0-9]{3}"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[21])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_tel" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Type Time</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="time"&gt;</code> allows the user to select a time (no time zone).</p>
+<p>Depending on browser support, a time picker can show up in the input field.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="appt"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Select a time:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="time"</span> id<span class="attributevaluecolor" style="color:mediumblue">="appt"</span> name<span class="attributevaluecolor" style="color:mediumblue">="appt"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[22])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_time" target="_self">Try it Yourself »</a> 
+</div>
+<hr>
+
+<h2>Input Type Url</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="url"&gt;</code> is used for input fields that should contain a URL address.</p>
+<p>Depending on browser support, the url field can be automatically validated 
+when submitted.</p>
+<p>Some smartphones recognize the url type, and adds ".com" to the keyboard to match 
+url input.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="homepage"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Add your homepage:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="url"</span> id<span class="attributevaluecolor" style="color:mediumblue">="homepage"</span> name<span class="attributevaluecolor" style="color:mediumblue">="homepage"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[23])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_url" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Input Type Week</h2>
+<p>The <code class="codehemu-codespan">&lt;input type="week"&gt;</code> allows the user to select a week and year.</p>
+<p>Depending on browser support, a date picker can show up in the input field.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="week"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Select a week:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="week"</span> id<span class="attributevaluecolor" style="color:mediumblue">="week"</span> name<span class="attributevaluecolor" style="color:mediumblue">="week"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[24])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_input_week" target="_self">Try it Yourself »</a> 
+</div>
+
+<hr>
+
+
+<h2>HTML Input Type Attribute</h2>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a>&lt;input type=""&gt;</a></td>
+<td>Specifies the input type to display</td>
+</tr>
+</tbody></table>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_form_elements.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_form_attributes.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

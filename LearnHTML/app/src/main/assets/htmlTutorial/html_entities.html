@@ -1,0 +1,248 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+<h1>HTML <span class="color_h1">Entities</span></h1>
+<div class="codehemu-clear nextprev">
+  <a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+  <a class="codehemu-left codehemu-btn" href="html5_syntax.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_symbols.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">Reserved characters in HTML must be replaced with entities:</p>
+<ul>
+<li>&lt; (less than) = <b>&amp;lt;</b></li>
+<li>&gt; (greather than) = <b>&amp;gt;</b></li>
+</ul>
+<hr>
+
+<h2>HTML Character Entities</h2>
+<p>Some characters are reserved in HTML.</p>
+<p>If you use the less than (&lt;) or greater than (&gt;) signs in your HTML text, the browser might mix them with tags.</p>
+<p>Entity names or entity numbers can be used to display reserved HTML characters.</p>
+
+<p>Entity names look like this:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+&amp;<i>entity_name</i>;
+ </div></div>
+
+<p>Entity numbers look like this:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+&amp;#<i>entity_number</i>;
+ </div></div>
+
+<p>To display a less than sign (&lt;) we must write: <b>&amp;lt;</b> or <b>&amp;#60;</b></p>
+<div class="codehemu-panel codehemu-note">
+<p><b>Entity names</b> are easier to remember than entity numbers.</p>
+</div>
+<hr>
+
+<h2>Non-breaking Space</h2>
+<p>A commonly used HTML entity is the non-breaking space: <strong>&amp;nbsp;</strong></p>
+<p>A non-breaking space is a space that will not break into a new line.</p>
+<p>Two words 
+separated by a non-breaking space will stick together (not break into a new 
+line). This 
+is handy when breaking the words might be disruptive.</p>
+<p>Examples:</p>
+<ul>
+ <li>§ 10</li>
+ <li>10 km/h</li>
+ <li>10 PM</li>
+</ul>
+
+<p>Another common use of the non-breaking space is to prevent browsers from truncating spaces in HTML pages.</p>
+<p>If you write 10 spaces in your text, the browser will remove 9 of them. To add real spaces to your text, 
+you can use the <strong>&amp;nbsp;</strong> character entity.</p>
+
+
+
+
+<hr>
+<h2>Some Useful HTML Character Entities</h2>
+<table class="ws-table-all notranslate">
+    <tbody><tr>
+      <th>Result</th>
+      <th>Description</th>
+      <th>Name</th>
+      <th>Number</th>
+      <th></th>      
+    </tr>
+    <tr>
+      <td></td>
+      <td>non-breaking space</td>
+      <td>&amp;nbsp;</td>
+      <td>&amp;#160;</td>
+       
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+  
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    
+    </tr>
+    <tr>
+      <td>"</td>
+      <td>double quotation mark </td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+  
+    </tr>
+    <tr>
+      <td>'</td>
+      <td>single quotation mark</td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+    
+    </tr>
+    <tr>
+      <td>¢</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+     
+    </tr>
+    <tr>
+      <td>£</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+     
+    </tr>
+    <tr>
+      <td>¥</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+ 
+    </tr>
+    <tr>
+      <td>€</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+   
+    </tr>
+    <tr>
+      <td>©</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+   
+    </tr>
+    <tr>
+      <td>®</td>
+      <td>trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+   
+    </tr>
+    </tbody></table>
+
+<div class="codehemu-panel codehemu-note">
+<h2>Note</h2>
+<p>Entity names are case sensitive.</p>
+</div>
+<hr>
+
+<h2>Combining Diacritical Marks</h2>
+<p>A diacritical mark is a "glyph" added to a letter.</p>
+<p>Some diacritical marks, like grave (&nbsp; ̀) and acute (&nbsp; ́) are called accents. </p>
+<p>Diacritical marks can be used in combination with alphanumeric characters to produce a character that is not present in 
+the character set (encoding) used in the page.</p>
+<p>Here are some examples:</p>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th>Mark</th>
+<th>Character</th>
+<th>Construct</th>
+<th>Result</th>
+<th></th>      
+</tr>
+<tr>
+      <td>&nbsp;̀</td>
+      <td>a</td>
+      <td>a&amp;#768;</td>
+      <td>à</td>
+    
+</tr>
+<tr>
+      <td>&nbsp;́</td>
+      <td>a</td>
+      <td>a&amp;#769;</td>
+      <td>á</td>
+
+</tr>
+<tr>
+      <td>̂</td>
+      <td>a</td>
+      <td>a&amp;#770;</td>
+      <td>â</td>
+     
+</tr>
+<tr>
+      <td>&nbsp;̃</td>
+      <td>a</td>
+      <td>a&amp;#771;</td>
+      <td>ã</td>
+
+</tr>
+<tr>
+      <td>&nbsp;̀</td>
+      <td>O</td>
+      <td>O&amp;#768;</td>
+      <td>Ò</td>
+   
+</tr>
+<tr>
+      <td>&nbsp;́</td>
+      <td>O</td>
+      <td>O&amp;#769;</td>
+      <td>Ó</td>
+    
+</tr>
+<tr>
+      <td>̂</td>
+      <td>O</td>
+      <td>O&amp;#770;</td>
+      <td>Ô</td>
+
+</tr>
+<tr>
+      <td>&nbsp;̃</td>
+      <td>O</td>
+      <td>O&amp;#771;</td>
+      <td>Õ</td>
+
+</tr>
+</tbody></table>
+
+<div class="codehemu-panel codehemu-note">
+<p>There are more examples in the next chapter.</p>
+</div>
+
+
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html5_syntax.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_symbols.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

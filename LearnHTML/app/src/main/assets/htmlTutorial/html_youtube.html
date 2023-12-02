@@ -1,0 +1,115 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1">YouTube Videos</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_object.html">❮ Previous</a>
+</div>
+<hr>
+<p class="intro">The easiest way to play videos in HTML, is to use YouTube.</p>
+<hr>
+
+<h2>Struggling with Video Formats?</h2>
+<p>Converting videos to different formats can be difficult and time-consuming.</p>
+<p>An easier solution is to let YouTube play the videos in your web page.</p>
+<hr>
+
+<h2>YouTube Video Id</h2>
+<p>YouTube will display an id (like ZRWmP8KRTKo), when you save (or play) a video.</p>
+<p>You can use this id, and refer to your video in the HTML code.</p>
+<hr>
+
+<h2>Playing a YouTube Video in HTML</h2>
+<p>To play your video on a web page, do the following:</p>
+<ul>
+ <li>Upload the video to YouTube</li>
+ <li>Take a note of the video id</li>
+ <li>Define an <code class="codehemu-codespan">&lt;iframe&gt;</code> element in your web page</li>
+ <li>Let the <code class="codehemu-codespan">src</code> attribute point to the video URL</li>
+ <li>Use the <code class="codehemu-codespan">width</code> and <code class="codehemu-codespan">
+ height</code> attributes to specify the dimension of the player</li>
+ <li>Add any other parameters to the URL (see below)</li>
+</ul>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/ZRWmP8KRTKo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_youtubeiframe" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>YouTube Autoplay + Mute</h2>
+<p>You can let your video start playing automatically when a user visits the 
+page, by adding <code class="codehemu-codespan">autoplay=1</code> to the YouTube URL. 
+However, automatically starting a video is annoying for your visitors!</p>
+
+<div class="codehemu-panel codehemu-note">
+<p><strong>Note:</strong> Chromium browsers do not 
+allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+</div>
+
+<p>Add <code class="codehemu-codespan">mute=1</code> after <code class="codehemu-codespan">
+autoplay=1</code> to let your video start playing automatically (but muted).</p>
+
+<div class="codehemu-example">
+<h3>YouTube - Autoplay + Muted</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/ZRWmP8KRTKo?autoplay=1&amp;mute=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_youtubeiframe_autoplay" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+
+<hr>
+<h2>YouTube Playlist</h2>
+<p>A comma separated list of videos to play (in addition to the original URL).</p>
+<hr>
+
+<h2>YouTube Loop</h2>
+<p>Add <code class="codehemu-codespan">loop=1</code> to let your video loop forever.</p>
+
+<p>Value 0 (default): The video will play only once.</p>
+<p>Value 1: The video will loop (forever).</p>
+<div class="codehemu-example">
+<h3>YouTube - Loop</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/ZRWmP8KRTKo?playlist=ZRWmP8KRTKo&amp;loop=1"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_youtubeiframe_loop" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>YouTube Controls</h2>
+<p>Add <code class="codehemu-codespan">controls=0</code> to not display controls in the 
+video player.</p>
+
+<p>Value 0: Player controls does not display.</p>
+<p>Value 1 (default): Player controls display.</p>
+<div class="codehemu-example">
+<h3>YouTube - Controls</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>iframe<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="420"</span> height<span class="attributevaluecolor" style="color:mediumblue">="315"</span><br>src<span class="attributevaluecolor" style="color:mediumblue">="https://www.youtube.com/embed/ZRWmP8KRTKo?controls=0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/iframe<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_youtubeiframe_controls" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_object.html">❮ Previous</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

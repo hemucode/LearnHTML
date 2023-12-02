@@ -1,0 +1,357 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<style type="text/css">
+	.table1, .table1 th, .table1 td {
+  border:1px solid #282A35;
+}
+body .table1,body .table1 th,body .table1 td {
+  border:1px solid #ddd;
+}
+
+.table2, .table2 th, .table2 td {
+  border:1px solid #282A35;
+  border-collapse: collapse;
+}
+body .table2,body .table2 th,body .table2 td {
+  border:1px solid #ddd;
+}
+
+.table2 td {
+  height:29px;
+}
+.table3, .table3 th, .table3 td {
+  border:2px solid #fff;
+  border-collapse: collapse;
+}
+
+.table3 td {
+  background-color:#96D4D4;
+  border-radius:10px;
+  height:29px;
+}
+.table4, .table4 th, .table4 td {
+  border:2px solid #fff;
+  border-collapse: collapse;
+}
+body .table4,body .table4 th,body .table4 td {
+  border-color:#282A35;
+}
+.table4 td {
+  background-color:#96D4D4;
+}
+.table5, .table5 th, .table5 td {
+  border:1px solid black;
+  border-radius: 10px;
+}
+body .table5,body .table5 th,body .table5 td {
+  border-color:#ddd;
+}
+.table6 th, .table6 td {
+  border:1px solid black;
+  border-radius: 10px;
+}
+body .table6,body .table6 th,body .table6 td {
+  border-color:#ddd;
+}
+.table7, .table7 th, .table7 td {
+  border-collapse: collapse;
+}
+.table7 th, .table7 td {
+  border:2px solid black;
+  border-style: dotted;
+}
+body .table7,body .table7 th,body .table7 td {
+  border-color:#ddd;
+}
+.table8, .table8 th, .table8 td {
+  border-collapse: collapse;
+}
+
+.table8 th, .table8 td {
+  border:2px solid #96D4D4;
+}
+</style>
+<div class="codehemu-col l10 m12" id="main">
+  <h1>HTML <span class="color_h1">Table Borders</span></h1>
+  <div class="codehemu-clear nextprev">
+  	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+    <a class="codehemu-left codehemu-btn" href="html_tables.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_table_sizes.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">HTML tables can have borders of different styles and shapes.</p>
+  <hr>
+  <h2>How To Add a Border</h2>
+
+  <p>To add a border, use the CSS <code class="codehemu-codespan">border</code> property on
+    <code class="codehemu-codespan">table</code>, <code class="codehemu-codespan">th</code>, and
+    <code class="codehemu-codespan">td</code> elements:
+  </p>
+  <table class="table1" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        table, th, td
+        <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>
+          &nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border" target="_self">Try it Yourself »</a>
+  </div>
+
+  <hr>
+
+  <h2>Collapsed Table Borders</h2>
+  <p>To avoid having double borders like in the example above, set the CSS <code class="codehemu-codespan">border-collapse</code>
+    property to <code class="codehemu-codespan">collapse</code>.</p>
+  <p>This will make the borders collapse into a single border:</p>
+  <table class="table2" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        table, th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+          &nbsp;
+          border-collapse<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> collapse<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+          <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_collapse" target="_self">Try it Yourself »</a>
+  </div>
+
+
+
+  <h2>Style Table Borders</h2>
+  <p>If you set a background color of each cell,
+    and give the border a white color (the same as the document background),
+    you get the impression of an invisible border:</p>
+  <table class="table4" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        table, th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid white<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+          &nbsp;
+          border-collapse<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> collapse<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #96D4D4<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border_style" target="_self">Try it Yourself »</a>
+  </div>
+
+
+  <hr>
+
+  <h2>Round Table Borders</h2>
+  <p>With the <code class="codehemu-codespan">border-radius</code> property, the borders get rounded corners:</p>
+  <table class="table5" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        table, th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid
+            black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+          &nbsp;
+          border-radius<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+          <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border_round1" target="_self">Try it Yourself »</a>
+  </div>
+
+
+  <hr>
+
+  <p>Skip the border around the table by leaving out <code class="codehemu-codespan">table</code> from the css selector:</p>
+  <table class="table6" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid
+            black<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+          &nbsp;
+          border-radius<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+          <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border_round2" target="_self">Try it Yourself »</a>
+  </div>
+
+
+  <hr>
+
+  <h2>Dotted Table Borders</h2>
+  <p>With the <code class="codehemu-codespan">border-style</code> property, you can set the
+    appearance of the border.</p>
+
+  <table class="table7" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>The following values are allowed:</p>
+
+  <ul>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">dotted</code></span> <span style="xborder:2px solid black;border-style:dotted">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">dashed</code></span> <span style="xborder:2px solid black;border-style:dashed">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">solid</code></span> <span style="xborder:2px solid black;border-style:solid">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">double</code></span> <span style="xborder:2px solid black;border-style:double">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">groove</code></span> <span style="xborder:2px solid black;border-style:groove">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">ridge</code></span> <span style="xborder:2px solid black;border-style:ridge">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">inset</code></span> <span style="xborder:2px solid black;border-style:inset">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">outset</code></span> <span style="xborder:2px solid black;border-style:outset">&nbsp;&nbsp;&nbsp;&nbsp;</span> </li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">none</code></span> <span style="xborder:2px solid black;border-style:none">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+    <li><span style="display:inline-block;width:70px;"><code class="codehemu-codespan">hidden</code></span> <span style="xborder:2px solid black;border-style:hidden">&nbsp;&nbsp;&nbsp;&nbsp;</span></li>
+  </ul>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        &nbsp;th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+          border-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> dotted<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border_dotted" target="_self">Try it Yourself »</a>
+  </div>
+
+
+  <hr>
+  <h2>Border Color</h2>
+  <p>With the <code class="codehemu-codespan">border-color</code> property, you can set the color of the border.</p>
+
+  <table class="table8" style="width:30%;">
+    <tbody>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+      <tr>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+        <td>&nbsp;</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        &nbsp;th, td <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+          border-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #96D4D4<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_border_color" target="_self">Try it Yourself »</a>
+  </div>
+
+
+  <hr>
+
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_tables.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_table_sizes.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

@@ -1,0 +1,352 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+  <h1>HTML <span class="color_h1">Canvas Graphics</span></h1>
+  <div class="codehemu-clear nextprev">
+  	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_form_attributes_form.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html5_svg.html">Next ❯</a>
+  </div>
+  <hr>
+
+  <div>
+    <canvas id="myCanvas" width="270" height="160" style="border:1px solid #c3c3c3;float:left;margin-right:20px;margin-bottom:15px">
+      Your browser does not support the &lt;canvas&gt; element.
+    </canvas>
+    <p class="intro">The HTML <code class="codehemu-codespan">&lt;canvas&gt;</code> element is used to draw graphics on a web page.</p>
+    <p class="intro">The graphic to the left is created with <code class="codehemu-codespan">&lt;canvas&gt;</code>. It shows four
+      elements: a red rectangle, a gradient rectangle,
+      a multicolor rectangle, and a multicolor text.</p>
+  </div>
+  <div style="clear:both;"></div>
+  <script>
+    var c = document.getElementById("myCanvas");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      ctx.fillStyle = "#FF0000";
+      ctx.fillRect(20, 20, 100, 50);
+
+      var grd = ctx.createLinearGradient(140, 20, 240, 70);
+      grd.addColorStop(0, "black");
+      grd.addColorStop(1, "white");
+      ctx.fillStyle = grd;
+      ctx.fillRect(140, 20, 100, 50);
+
+      var grd2 = ctx.createLinearGradient(20, 90, 120, 90);
+      grd2.addColorStop(0, "black");
+      grd2.addColorStop("0.3", "magenta");
+      grd2.addColorStop("0.5", "blue");
+      grd2.addColorStop("0.6", "green");
+      grd2.addColorStop("0.8", "yellow");
+      grd2.addColorStop(1, "red");
+      ctx.fillStyle = grd2;
+      ctx.fillRect(20, 90, 100, 50);
+
+      ctx.font = "30px Verdana";
+      var grd3 = ctx.createLinearGradient(140, 20, 240, 90);
+      grd3.addColorStop(0, "black");
+      grd3.addColorStop("0.3", "magenta");
+      grd3.addColorStop("0.6", "blue");
+      grd3.addColorStop("0.8", "green");
+      grd3.addColorStop(1, "red");
+      ctx.strokeStyle = grd3;
+      ctx.strokeText("Smile!", 140, 120);
+    }
+  </script>
+  <hr>
+
+  <h2>What is HTML Canvas?</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;canvas&gt;</code> element is used to draw graphics, on the fly, via JavaScript.</p>
+  <p>The <code class="codehemu-codespan">&lt;canvas&gt;</code> element is only a container for graphics. You must use
+    JavaScript to actually draw the graphics.</p>
+  <p>Canvas has several methods for drawing paths, boxes, circles, text, and adding images.</p>
+  <hr>
+
+  <h2>Browser Support</h2>
+  <p>The numbers in the table specify the first browser version that fully supports the
+    <code class="codehemu-codespan">&lt;canvas&gt;</code> element.
+  </p>
+  <table class="browserref notranslate">
+    <tbody>
+      <tr>
+        <th style="width:20%;font-size:16px;text-align:left;">Element</th>
+        <th style="width:16%;" class="bsChrome" title="Chrome"></th>
+        <th style="width:16%;" class="bsEdge" title="Internet Explorer / Edge"></th>
+        <th style="width:16%;" class="bsFirefox" title="Firefox"></th>
+        <th style="width:16%;" class="bsSafari" title="Safari"></th>
+        <th style="width:16%;" class="bsOpera" title="Opera"></th>
+      </tr>
+      <tr>
+        <td style="text-align:left;">&lt;canvas&gt;</td>
+        <td>4.0</td>
+        <td>9.0</td>
+        <td>2.0</td>
+        <td>3.1</td>
+        <td>9.0</td>
+      </tr>
+    </tbody>
+  </table>
+  <hr>
+
+  <h2>Canvas Examples</h2>
+  <p>A canvas is a rectangular area on an HTML page. By default, a canvas has no border and no content.</p>
+  <p>The markup looks like this:</p>
+  <div class="codehemu-code codehemu-border notranslate htmlHigh">
+    <div>
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <p><b>Note:</b> Always specify an <code class="codehemu-codespan">id</code> attribute (to be referred to in a script),
+    and a <code class="codehemu-codespan">width</code> and <code class="codehemu-codespan">height</code> attribute to define the size of the canvas. To add a border, use the <code class="codehemu-codespan">style</code> attribute.</p>
+  <p>Here is an example of a basic, empty canvas:</p>
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;">
+    Your browser does not support the canvas element.
+  </canvas>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>canvas<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="myCanvas"</span> width<span class="attributevaluecolor" style="color:mediumblue">="200"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span>
+          style<span class="attributevaluecolor" style="color:mediumblue">="border:1px solid
+            #000000;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/canvas<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html?filename=tryhtml5_canvas_empty" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <hr>
+
+  <h2>Add a JavaScript</h2>
+  <p>After creating the rectangular canvas area, you must add a JavaScript to do
+    the drawing.</p>
+  <p>Here are some examples:</p>
+  <h3>Draw a Line</h3>
+  <canvas id="myCanvas2" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas2");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      ctx.moveTo(0, 0);
+      ctx.lineTo(200, 100);
+      ctx.stroke();
+    }
+  </script>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">moveTo</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">0</span>);<br>ctx.<span class="jspropertycolor" style="color:black">lineTo</span>(<span class="jsnumbercolor" style="color:red">200</span>, <span class="jsnumbercolor" style="color:red">100</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">stroke</span>();<br>&lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_path" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h3>Draw a Circle</h3>
+  <canvas id="myCanvas3" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas3");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      ctx.beginPath();
+      ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+      ctx.stroke();
+    }
+  </script>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">beginPath</span>();<br>ctx.<span class="jspropertycolor" style="color:black">arc</span>(<span class="jsnumbercolor" style="color:red">95</span>, <span class="jsnumbercolor" style="color:red">50</span>, <span class="jsnumbercolor" style="color:red">40</span>, <span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">2</span> * Math.<span class="jspropertycolor" style="color:black">PI</span>);<br>ctx.<span class="jspropertycolor" style="color:black">stroke</span>();<br><span class="jsnumbercolor" style="color:red">
+        </span> &lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_path2" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h3>Draw a Text</h3>
+  <canvas id="myCanvas4" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas4");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.fillText("Hello World", 10, 50);
+    }
+  </script>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">font</span> = <span class="jsstringcolor" style="color:brown">"30px Arial"</span>;<br>ctx.<span class="jspropertycolor" style="color:black">fillText</span>(<span class="jsstringcolor" style="color:brown">"Hello World"</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">50</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> &lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_text" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h3>Stroke Text</h3>
+  <canvas id="myCanvas5" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas5");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      ctx.font = "30px Arial";
+      ctx.strokeText("Hello World", 10, 50);
+    }
+  </script>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">font</span> = <span class="jsstringcolor" style="color:brown">"30px Arial"</span>;<br>ctx.<span class="jspropertycolor" style="color:black">strokeText</span>(<span class="jsstringcolor" style="color:brown">"Hello World"</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">50</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> &lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_text2" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h3>Draw Linear Gradient</h3>
+  <canvas id="myCanvas6" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas6");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      // Create gradient
+      var grd = ctx.createLinearGradient(0, 0, 200, 0);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+    }
+  </script>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="commentcolor" style="color:green">// Create gradient<br></span><span class="jsnumbercolor" style="color:red">
+        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor" style="color:black">createLinearGradient</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">0</span>, <span class="jsnumbercolor" style="color:red">200</span>, <span class="jsnumbercolor" style="color:red">0</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">1</span>, <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="commentcolor" style="color:green">// Fill with gradient<br></span><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> = grd;<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">fillRect</span>(<span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">150</span>, <span class="jsnumbercolor" style="color:red">80</span>);<br>&lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_grad" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h3>Draw Circular Gradient</h3>
+  <canvas id="myCanvas7" width="200" height="100" style="border:1px solid #d3d3d3;">
+    Your browser does not support the canvas element
+  </canvas>
+  <script>
+    var c = document.getElementById("myCanvas7");
+    var canvOK = 1;
+    try {
+      c.getContext("2d");
+    } catch (er) {
+      canvOK = 0;
+    }
+    if (canvOK == 1) {
+      var ctx = c.getContext("2d");
+      // Create gradient
+      var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+      grd.addColorStop(0, "red");
+      grd.addColorStop(1, "white");
+      // Fill with gradient
+      ctx.fillStyle = grd;
+      ctx.fillRect(10, 10, 150, 80);
+    }
+  </script>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="commentcolor" style="color:green">// Create gradient<br></span><span class="jsnumbercolor" style="color:red">
+        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> grd = ctx.<span class="jspropertycolor" style="color:black">createRadialGradient</span>(<span class="jsnumbercolor" style="color:red">75</span>, <span class="jsnumbercolor" style="color:red">50</span>, <span class="jsnumbercolor" style="color:red">5</span>, <span class="jsnumbercolor" style="color:red">90</span>, <span class="jsnumbercolor" style="color:red">60</span>, <span class="jsnumbercolor" style="color:red">100</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">0</span>, <span class="jsstringcolor" style="color:brown">"red"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> grd.<span class="jspropertycolor" style="color:black">addColorStop</span>(<span class="jsnumbercolor" style="color:red">1</span>, <span class="jsstringcolor" style="color:brown">"white"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="commentcolor" style="color:green">// Fill with gradient<br></span><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">fillStyle</span> = grd;<br>ctx.<span class="jspropertycolor" style="color:black">fillRect</span>(<span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">150</span>, <span class="jsnumbercolor" style="color:red">80</span>);<br>&lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[7])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_grad2" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <div class="codehemu-example">
+    <h3>Draw Image</h3>
+    <div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+        </span> &lt;script&gt;<br><span class="jskeywordcolor" style="color:mediumblue">var</span> c = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myCanvas"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> ctx = c.<span class="jspropertycolor" style="color:black">getContext</span>(<span class="jsstringcolor" style="color:brown">"2d"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> <span class="jskeywordcolor" style="color:mediumblue">var</span> img = document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"scream"</span>);<br><span class="jsnumbercolor" style="color:red">
+        </span> ctx.<span class="jspropertycolor" style="color:black">drawImage</span>(img, <span class="jsnumbercolor" style="color:red">10</span>, <span class="jsnumbercolor" style="color:red">10</span>);<br>&lt;/script&gt; </span></div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[8])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_canvas_tut_img" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_form_attributes_form.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html5_svg.html">Next ❯</a>
+  </div>
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

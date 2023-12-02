@@ -1,0 +1,385 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+    <style>
+
+.header {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.header h2{
+    font-size: 50px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;
+}
+
+
+.nav {
+    float: left;
+    width: 25%;
+    height: 300px; 
+    background: #ccc;
+    padding: 20px;
+}
+
+/* Style the list inside the menu */
+.nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav ul a{
+    text-decoration:underline!important;
+    box-shadow:none!important;
+    color:blue;
+}
+
+.article {
+    float: left;
+    padding: 20px;
+    width: 75%;
+    background-color: #f1f1f1;
+    color:#000;
+    height: 300px; 
+}
+
+
+.section::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Style the footer */
+.footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .nav, .article {
+        width: 100%;
+        height: auto;
+    }    .header {
+        font-size:25px    }
+
+}
+
+
+.header2 {
+    background-color: #666;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+    color: white;
+}
+.header2 h2{
+    font-size: 50px;font-family: Arial, Helvetica, sans-serif;font-weight:bold;
+}
+
+/* Container for flexboxes */
+.section2 {
+    display: -webkit-flex;
+    display: flex;
+}
+
+/* Create three equal columns that sits next to each other */
+.nav2{
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: #ccc;
+    padding: 20px;
+}
+
+
+.nav2 ul {
+    list-style-type: none;
+    padding: 0;
+}
+.nav2 ul a{
+    text-decoration:underline!important;
+    box-shadow:none!important;
+    color:blue;
+}
+
+.article2 {
+    -webkit-flex: 3;
+    -ms-flex: 3;
+    flex: 3;
+    background-color: #f1f1f1;
+    color:#000;
+    padding: 10px;
+}
+
+
+.footer2 {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+
+@media (max-width: 600px) {
+    .section2 {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+}
+
+</style>
+<h1>HTML <span class="color_h1">Layout Elements and Techniques</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_head.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_responsive.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">Websites often display content in multiple columns (like a magazine or 
+a newspaper).</p>
+<hr>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-white codehemu-padding notranslate" style="font-family: Arial, Helvetica, sans-serif;">
+<header class="header">
+  <h2>Cities</h2>
+</header>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #666;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 30%;
+  height: 300px; /* only for demonstration, should be removed */
+  background: #ccc;
+  padding: 20px;
+}
+
+/* Style the list inside the menu */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+article {
+  float: left;
+  padding: 20px;
+  width: 70%;
+  background-color: #f1f1f1;
+  height: 300px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+<section class="section">
+  <nav class="nav">
+    <ul>
+      <li><a href="javascript:void(0)">London</a></li>
+      <li><a href="javascript:void(0)">Paris</a></li>
+      <li><a href="javascript:void(0)">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article class="article">
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer class="footer"> 
+  <p>Footer</p>
+</footer>
+</div>
+<button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[0])" class="codehemu-btn ">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-top codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_layout_float" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>HTML Layout Elements</h2>
+<p>HTML has several semantic elements that define the different parts of a web page:</p>
+<div class="codehemu-hide-large codehemu-hide-medium">
+<div class="codehemu-dark-grey">
+<img alt="HTML5 Semantic Elements" src="img_sem_elements.gif" style="width:100%;max-width:350px;text-align:center;display:block;margin:auto">
+</div>
+<div style="margin:16px 0">
+  <code class="codehemu-codespan">&lt;header&gt;</code> - Defines a header for a document or a section<br>
+  <code class="codehemu-codespan">&lt;nav&gt;</code> - Defines a set of navigation links<br>
+  <code class="codehemu-codespan">&lt;section&gt;</code> - Defines a section in a document<br>
+  <code class="codehemu-codespan">&lt;article&gt;</code> - Defines an independent, 
+  self-contained content<br>
+  <code class="codehemu-codespan">&lt;aside&gt;</code> - Defines content aside from the content (like a sidebar)<br>
+  <code class="codehemu-codespan">&lt;footer&gt;</code> - Defines a footer for a document or a section<br>
+  <code class="codehemu-codespan">&lt;details&gt;</code> - Defines additional details 
+  that the user can open and close on demand<br>
+  <code class="codehemu-codespan">&lt;summary&gt;</code> - Defines a heading for the <code class="codehemu-codespan">&lt;details&gt;</code> element<br>
+</div>
+</div>
+
+<table style="width:100%" class="codehemu-hide-small">
+<tbody><tr>
+<td style="width:225px;vertical-align:top">
+<img alt="HTML5 Semantic Elements" src="img_sem_elements.gif" width="219" height="258">
+</td>
+<td style="vertical-align:top">
+<ul>
+<li> <code class="codehemu-codespan">&lt;header&gt;</code> - Defines a header for a document or a section</li>
+  <li> <code class="codehemu-codespan">&lt;nav&gt;</code> - Defines a set of navigation links</li>
+  <li> <code class="codehemu-codespan">&lt;section&gt;</code> - Defines a section in a document</li>
+  <li> <code class="codehemu-codespan">&lt;article&gt;</code> - Defines an independent, self-contained 
+  content</li>
+  <li> <code class="codehemu-codespan">&lt;aside&gt;</code> - Defines content aside from the content (like a sidebar)</li>
+  <li> <code class="codehemu-codespan">&lt;footer&gt;</code> - Defines a footer for a document or a section</li>
+  <li> <code class="codehemu-codespan">&lt;details&gt;</code> - Defines additional details 
+  that the user can open and close on demand</li>
+  <li> <code class="codehemu-codespan">&lt;summary&gt;</code> - Defines a heading for the <code class="codehemu-codespan">&lt;details&gt;</code> element</li>
+</ul>
+<p>You can read more about semantic elements in our
+<a href="html5_semantic_elements.html">HTML Semantics</a> chapter.</p>
+</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>HTML Layout Techniques</h2>
+<p>There are four different techniques to create multicolumn layouts. Each 
+technique has its pros and cons:</p>
+<ul>
+  <li>CSS framework</li>
+  <li>CSS float property</li>
+  <li>CSS flexbox</li>
+  <li>CSS grid</li>
+</ul>
+
+
+
+<h2>CSS Float Layout</h2>
+<p>It is common to do entire web layouts using the CSS <code class="codehemu-codespan">
+float</code> property. Float is easy to learn 
+- you just need to remember how the <code class="codehemu-codespan">float</code> and <code class="codehemu-codespan">
+clear</code> properties work. 
+<strong>Disadvantages:</strong> Floating elements are tied to the document flow, which may harm 
+the flexibility. Learn more about float in our <a href="/css/css_float.html">CSS 
+Float and Clear</a> chapter.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-white codehemu-padding notranslate" style="font-family: Arial, Helvetica, sans-serif;">
+<header class="header">
+  <h2>Cities</h2>
+</header>
+
+<section class="section">
+  <nav class="nav">
+    <ul>
+      <li><a href="javascript:void(0)">London</a></li>
+      <li><a href="javascript:void(0)">Paris</a></li>
+      <li><a href="javascript:void(0)">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article class="article">
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer class="footer"> 
+  <p>Footer</p>
+</footer>
+</div>
+<button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[1])" class="codehemu-btn">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-top codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_layout_float" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>CSS Flexbox Layout</h2>
+<p>Use of flexbox ensures that elements behave predictably when the page layout 
+must accommodate different screen sizes and different display devices. 
+</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-white codehemu-padding notranslate" style="font-family: Arial, Helvetica, sans-serif;">
+<header class="header2">
+  <h2>Cities</h2>
+</header>
+
+<section class="section2">
+  <nav class="nav2">
+    <ul>
+      <li><a href="#">London</a></li>
+      <li><a href="#">Paris</a></li>
+      <li><a href="#">Tokyo</a></li>
+    </ul>
+  </nav>
+  
+  <article class="article2">
+    <h1>London</h1>
+    <p>London is the capital city of England. It is the most populous city in the  United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </article>
+</section>
+
+<footer class="footer2">
+  <p>Footer</p>
+</footer>
+</div>
+<button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[2])" class="codehemu-btn">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-top codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_layout_flexbox" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_head.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_responsive.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

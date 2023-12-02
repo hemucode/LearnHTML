@@ -1,0 +1,105 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+  <h1>HTML <span class="color_h1">Comments</span></h1>
+  <div class="codehemu-clear nextprev">
+    <a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_quotation_elements.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_colors.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">HTML comments are not displayed in the browser, but they can
+    help document your HTML source code.</p>
+  <hr>
+
+  <h2>HTML Comment Tag</h2>
+  <p>You can add comments to your HTML source by using the following syntax:</p>
+  <div class="codehemu-example">
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="commentcolor" style="color:green">&lt;!-- Write your comments here --&gt;</span>
+    </div>
+  </div>
+  <p>Notice that there is an exclamation point (!) in the start tag, but not in the
+    end tag.</p>
+  <div class="codehemu-panel codehemu-note">
+    <p><strong>Note:</strong> Comments are not displayed by the browser, but they can help document your HTML source code.</p>
+  </div>
+
+  <hr>
+
+  <h2>Add Comments</h2>
+  <p>With comments you can place notifications and reminders in your HTML code:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="commentcolor" style="color:green">&lt;!-- This is a comment --&gt;</span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      <br><span class="commentcolor" style="color:green">&lt;!-- Remember to add more information here --&gt;</span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+
+  <hr>
+
+  <h2>Hide Content</h2>
+
+  <p>Comments can be used to hide content.</p>
+
+  <p>This can be helpful if you hide content temporarily:</p>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor" style="color:green">&lt;!-- &lt;p&gt;This is another paragraph
+        &lt;/p&gt; --&gt;</span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph too.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+  <p>You can also hide more than one line. Everything between the <code class="codehemu-codespan">&lt;!--</code> and the <code class="codehemu-codespan">--&gt;</code>
+    will be hidden from the display.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Hide a section of HTML code:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="commentcolor" style="color:green">&lt;!--<br>&lt;p&gt;Look at this cool
+        image:&lt;/p&gt;<br>
+        &lt;img border="0" src="pic_trulli.jpg"
+        alt="Trulli"&gt;<br>--&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph too.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+  <p>Comments are also great for debugging HTML, because you can
+    comment out HTML lines of code, one at a time, to search for errors.</p>
+
+  <hr>
+
+  <hr>
+  <h2>Hide Inline Content</h2>
+
+  <p>Comments can be used to hide parts in the middle of the HTML code.</p>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Hide a part of a paragraph:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This <span class="commentcolor" style="color:green">&lt;!-- great text --&gt;</span> is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+  <hr>
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_quotation_elements.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_colors.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

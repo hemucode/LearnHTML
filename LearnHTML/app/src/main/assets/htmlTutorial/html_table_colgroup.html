@@ -1,0 +1,238 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<style>
+.table1, .table1 th, .table1 td, .table2, .table2 th, .table2 td, .table3, .table3 th, .table3 td  {
+  border:1px solid #282A35;
+  border-collapse: collapse;
+  font-size:12px
+}
+body .table1,body .table1 th,body .table1 td,body .table2,body .table2 th,body .table2 td,body .table3, .table3 th,body .table3 td  {
+  border:1px solid #ddd;
+}
+
+.table1 td:nth-of-type(even){
+  background-color: rgba(150, 212, 212,0.4);
+}
+
+.table3 {
+  border:none;
+}
+
+.table3 th,.table3 td {
+  border:none;
+  border-bottom:1px solid rgba(150, 212, 212,1);
+}
+
+.table4, .table4 th, .table4 td {
+  border:1px solid #fff;
+}
+.tabletest2 {
+  font-size:15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabletest2,
+.tabletest2 th,
+.tabletest2 td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabletest4 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabletest4,
+.tabletest4 th,
+.tabletest4 td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabletest4 tr:hover {
+  background-color: #D6EEEE;
+}
+
+</style>
+<h1>HTML <span class="color_h1">Table Colgroup</span></h1>
+<div class="codehemu-clear nextprev">
+
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+<a class="codehemu-left codehemu-btn" href="html_table_styling.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_lists.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">The <code class="codehemu-codespan">&lt;colgroup&gt;</code> element is used to style specific 
+columns of a table.</p>
+
+<hr>
+<h2>HTML Table Colgroup</h2>
+
+<p>
+If you want to style the two first columns of a table, use the <code class="codehemu-codespan">&lt;colgroup&gt;</code>
+and <code class="codehemu-codespan">&lt;col&gt;</code>
+elements.
+</p>
+
+<table class="table2" style="width:60%;">
+<colgroup>
+    <col span="2" style="background-color:rgba(150, 212, 212,0.4)">
+  </colgroup>
+<tbody><tr>
+<th>MON</th>
+<th>TUE</th>
+<th>WED</th>
+<th>THU</th>
+<th>FRI</th>
+<th>SAT</th>
+<th>SUN</th>
+</tr>
+<tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+</tr>
+<tr>
+<td>8</td>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+<td>13</td>
+<td>14</td>
+</tr>
+<tr>
+<td>15</td>
+<td>16</td>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+<td>21</td>
+</tr>
+<tr>
+<td>22</td>
+<td>23</td>
+<td>24</td>
+<td>25</td>
+<td>26</td>
+<td>27</td>
+<td>28</td>
+</tr>
+</tbody></table>
+
+<p>The <code class="codehemu-codespan">&lt;colgroup&gt;</code> element should be used as a container for the column 
+specifications.</p>
+<p>Each group is specified with a <code class="codehemu-codespan">&lt;col&gt;</code> element.</p>
+<p>The <code class="codehemu-codespan">span</code> attribute specifies how many columns that get the style.</p>
+<p>The <code class="codehemu-codespan">style</code> attribute specifies the style to give the columns.</p>
+
+
+
+
+<div class="codehemu-example">
+  <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> span<span class="attributevaluecolor" style="color:mediumblue">="2"</span> 
+  style<span class="attributevaluecolor" style="color:mediumblue">="background-color: #D6EEEE"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>MON<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>TUE<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WED<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>THU<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>...  </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_colgroup1" target="_self">Try it Yourself »</a>
+</div>
+
+<div class="codehemu-panel codehemu-note">
+<p><b>Note:</b> The <code class="codehemu-codespan">&lt;colgroup&gt;</code> tag must be a 
+child of a <code class="codehemu-codespan">&lt;table&gt;</code> element and should be placed 
+before any other table elements, like <code class="codehemu-codespan">&lt;thead&gt;</code>,
+<code class="codehemu-codespan">&lt;tr&gt;</code>, <code class="codehemu-codespan">&lt;td&gt;</code> 
+etc., but after the <code class="codehemu-codespan">&lt;caption&gt;</code> element, if 
+present.</p>
+</div>
+
+<hr>
+
+
+
+
+
+<h2>Multiple Col Elements</h2>
+<p>If you want to style more columns with different styles, use more
+<code class="codehemu-codespan">&lt;col&gt;</code> elements inside the
+<code class="codehemu-codespan">&lt;colgroup&gt;</code>:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> span<span class="attributevaluecolor" style="color:mediumblue">="2"</span> 
+  style<span class="attributevaluecolor" style="color:mediumblue">="background-color: #D6EEEE"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> span<span class="attributevaluecolor" style="color:mediumblue">="3"</span> 
+  style<span class="attributevaluecolor" style="color:mediumblue">="background-color: pink"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>MON<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>TUE<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WED<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>THU<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>...  </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_colgroup2" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+
+<h2>Empty Colgroups</h2>
+
+<p>
+If you want 
+to style columns in the middle of a table, insert a "empty" 
+<code class="codehemu-codespan">&lt;col&gt;</code> element (with no 
+styles) for the columns before:
+</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> span<span class="attributevaluecolor" style="color:mediumblue">="3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> 
+  span<span class="attributevaluecolor" style="color:mediumblue">="2"</span> 
+  style<span class="attributevaluecolor" style="color:mediumblue">="background-color: pink"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>MON<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>TUE<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WED<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>THU<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>...  </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_colgroup3" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+<h2>Hide Columns</h2>
+
+<p>You can hide columns with the <code class="codehemu-codespan">visibility: collapse</code> property:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> span<span class="attributevaluecolor" style="color:mediumblue">="2"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>col<span class="attributecolor" style="color:red"> span<span class="attributevaluecolor" style="color:mediumblue">="3"</span> 
+  style<span class="attributevaluecolor" style="color:mediumblue">="visibility: collapse"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/colgroup<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>MON<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>TUE<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WED<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>THU<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>...  </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_colgroup4" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_table_styling.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_lists.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

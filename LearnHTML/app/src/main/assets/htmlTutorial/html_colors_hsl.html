@@ -1,0 +1,331 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<script type="text/javascript" src="js/codehemu_color.js"></script>
+<div class="codehemu-col l10 m12" id="main">
+
+  <h1>HTML <span class="color_h1">HSL and HSLA Colors</span></h1>
+  <div class="codehemu-clear nextprev">
+  	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_colors_hex.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_css.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">HSL stands for hue, saturation, and lightness.</p>
+  <p class="intro">HSLA color values are an extension of HSL with an Alpha channel
+    (opacity).</p>
+  <hr>
+
+  <h2>HSL Color Values</h2>
+  <p>In HTML, a color can be specified using hue, saturation, and lightness (HSL) in
+    the form:</p>
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsl(<em>hue</em>, <em>saturation</em>, <em>lightness</em>)</p>
+  <p>Hue is a degree on the color wheel from 0 to 360. 0 is red, 120 is green, and 240 is blue.</p>
+  <p>Saturation is a percentage value. 0% means a shade of gray, and 100% is the full color.</p>
+  <p>Lightness is also a percentage value. 0% is black, and 100% is white.</p>
+
+  <p>Experiment by mixing the HSL values below:</p>
+
+  <div class="codehemu-container xcodehemu-light-grey">
+    <div class="codehemu-row codehemu-container">
+      <div class="codehemu-col m2 codehemu-container codehemu-center">
+      </div>
+      <div class="codehemu-col m8 codehemu-container codehemu-center">
+        <div id="hslresult" style="line-height: 80px; background-color: rgb(255, 0, 0);">
+          <p id="hslresulttext" style="font-size: 120%; font-weight: bold; font-family: Consolas, &quot;Courier New&quot;, Courier, monospace; color: rgb(255, 255, 255);">hsl(0, 100%, 50%)</p>
+        </div>
+      </div>
+      <div class="codehemu-col m2 codehemu-container codehemu-center">
+      </div>
+    </div>
+    <div class="codehemu-row codehemu-container">
+      <div class="codehemu-col m4 codehemu-container codehemu-center">
+        <p>HUE</p>
+        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideHue" name="slideHue" value="0" min="0" max="360">
+        <div id="valHue" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+      </div>
+      <div class="codehemu-col m4 codehemu-container codehemu-center">
+        <p>SATURATION</p>
+        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideSat" name="slideSat" value="100" min="0" max="100">
+        <div id="valSat" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+      </div>
+      <div class="codehemu-col m4 codehemu-container codehemu-center">
+        <p>LIGHTNESS</p>
+        <input onchange="changeHsl()" oninput="changeHsl()" type="range" id="slideLight" name="slideLight" value="50" min="0" max="100">
+        <div id="valLight" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="notranslate codehemu-white codehemu-container">
+
+      <div class="codehemu-row codehemu-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(240, 100%, 50%)">hsl(240, 100%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(147, 50%, 47%);">hsl(147, 50%, 47%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(300, 76%, 72%);">hsl(300, 76%, 72%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(39, 100%, 50%);">hsl(39, 100%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(248, 53%, 58%);">hsl(248, 53%, 58%)</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+  <hr>
+  <h3>Saturation</h3>
+  <p>Saturation can be described as the intensity of a color.</p>
+  <p>100% is pure color, no shades of gray.</p>
+  <p>50% is 50% gray, but you can still see the color.</p>
+  <p>0% is completely gray; you can no longer see the color.</p>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="notranslate codehemu-white codehemu-container">
+
+      <div class="codehemu-row codehemu-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 80%, 50%)">hsl(0, 80%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 60%, 50%);">hsl(0, 60%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 40%, 50%);">hsl(0, 40%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 20%, 50%);">hsl(0, 20%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 50%);">hsl(0, 0%, 50%)</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+
+
+  <h3>Lightness</h3>
+  <p>The lightness of a color can be described as how much light you want to give the color, where 0% means no light (black), 50% means 50% light (neither dark nor light),
+    and 100% means full lightness (white).</p>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="notranslate codehemu-white codehemu-container">
+      <div class="codehemu-row codehemu-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 0%);">hsl(0, 100%, 0%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 25%)">hsl(0, 100%, 25%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 50%);">hsl(0, 100%, 50%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 75%);">hsl(0, 100%, 75%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 90%);color:#555555">hsl(0, 100%, 90%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 100%, 100%);color:#555555;">hsl(0, 100%, 100%)</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>Shades of Gray</h2>
+  <p>Shades of gray are often defined by setting the hue and saturation to 0, and
+    adjusting the lightness from 0% to 100% to get darker/lighter shades:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="notranslate codehemu-white codehemu-container">
+      <div class="codehemu-row codehemu-center" style="line-height:80px;color:white;font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 20%);">hsl(0, 0%, 20%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 30%)">hsl(0, 0%, 30%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 40%);">hsl(0, 0%, 40%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 60%);">hsl(0, 0%, 60%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 70%);color:#555555">hsl(0, 0%, 70%)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsl(0, 0%, 90%);color:#555555;">hsl(0, 0%, 90%)</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <button onclick="copyHTML(document.querySelectorAll('.codehemu-white')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <h2>HSLA Color Values</h2>
+  <p>HSLA color values are an extension of HSL color values, with an Alpha channel
+    - which specifies the opacity for a color.</p>
+  <p>An HSLA color value is
+    specified with:</p>
+  <p style="font-size:20px;font-weight:bold;font-family:Consolas, 'Courier New', Courier, monospace">hsla(<em>hue,</em> <em>saturation</em>, <em>lightness,
+      alpha</em>)</p>
+  <p>The alpha parameter is a number
+    between 0.0 (fully transparent) and 1.0 (not transparent at all):</p>
+
+  <p>Experiment by mixing the HSLA values below:</p>
+
+  <div class="codehemu-container xcodehemu-light-grey">
+    <div class="codehemu-row codehemu-container">
+      <div class="codehemu-col m2 codehemu-container codehemu-center">
+      </div>
+      <div class="codehemu-col m8 codehemu-container codehemu-center">
+        <div id="hslaresult" style="line-height: 80px; background-color: rgba(255, 0, 0, 0.5);">
+          <p id="hslaresulttext" style="font-size: 120%; font-weight: bold; font-family: Consolas, &quot;Courier New&quot;, Courier, monospace; color: rgb(255, 255, 255);">hsla(0, 100%, 50%, 0.5)</p>
+        </div>
+      </div>
+      <div class="codehemu-col m2 codehemu-container codehemu-center">
+      </div>
+    </div>
+    <div class="codehemu-row codehemu-container">
+      <div class="codehemu-col m3 codehemu-container codehemu-center">
+        <p>HUE</p>
+        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHueA" name="slideHueA" value="0" min="0" max="360">
+        <div id="valHueA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0</div>
+      </div>
+      <div class="codehemu-col m3 codehemu-container codehemu-center">
+        <p>SATURATION</p>
+        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideSatA" name="slideSatA" value="100" min="0" max="100">
+        <div id="valSatA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">100%</div>
+      </div>
+      <div class="codehemu-col m3 codehemu-container codehemu-center">
+        <p>LIGHTNESS</p>
+        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideLightA" name="slideLightA" value="50" min="0" max="100">
+        <div id="valLightA" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">50%</div>
+      </div>
+      <div class="codehemu-col m3 codehemu-container codehemu-center">
+        <p>ALPHA</p>
+        <input onchange="changeHsla()" oninput="changeHsla()" type="range" id="slideHslAlpha" name="slideHslAlpha" value="5" min="0" max="10">
+        <div id="valHslAlpha" style="font-size:120%;font-family:Consolas, 'Courier New', Courier, monospace;">0.5</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="notranslate codehemu-white">
+      <div class="codehemu-row codehemu-center" style="
+    line-height:80px;
+    color:white;
+    font-size:20px;
+    font-weight:bold;
+    font-family:Consolas, 'Courier New', Courier, monospace;
+    background-repeat:no-repeat, repeat;
+    background-position:center, top left;
+    background-color:#ffffff;">
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsla(9, 100%, 64%, 0);color:#555555;">hsla(9, 100%, 64%, 0)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsla(9, 100%, 64%, 0.2);color:#555555;">hsla(9, 100%, 64%, 0.2)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsla(9, 100%, 64%, 0.4);">hsla(9, 100%, 64%, 0.4)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsla(9, 100%, 64%, 0.6);">hsla(9, 100%, 64%, 0.6)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsla(9, 100%, 64%, 0.8);">hsla(9, 100%, 64%, 0.8)</div>
+        </div>
+        <div class="codehemu-col m6 codehemu-padding">
+          <div style="background-color:hsla(9, 100%, 64%, 1);">hsla(9, 100%, 64%, 1)</div>
+        </div>
+      </div>
+    </div>
+    <br>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+
+
+  <script>
+    changeHsl("h");
+
+    function changeHsl(x) {
+      var col, h, s, l;
+      h = document.getElementById("slideHue").value;
+      s = document.getElementById("slideSat").value;
+      l = document.getElementById("slideLight").value;
+      col = codehemucolor("hsl(" + h + "," + s / 100 + "," + l / 100 + ")");
+      document.getElementById('valHue').innerHTML = col.toHsl().h;
+      document.getElementById('valSat').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+      document.getElementById('valLight').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+      document.getElementById('hslresult').style.backgroundColor = col.toHslString();
+      document.getElementById('hslresulttext').innerHTML = col.toHslString();
+      if (col.isDark(150)) {
+        document.getElementById('hslresulttext').style.color = "#ffffff";
+      } else {
+        document.getElementById('hslresulttext').style.color = "#1f2d3d";
+      }
+    }
+
+    changeHsla("h");
+
+    function changeHsla(x) {
+      var col, h, s, l, a;
+      h = document.getElementById("slideHueA").value;
+      s = document.getElementById("slideSatA").value;
+      l = document.getElementById("slideLightA").value;
+      a = document.getElementById("slideHslAlpha").value / 10;
+      col = codehemucolor("hsla(" + h + "," + s / 100 + "," + l / 100 + "," + a + ")");
+      document.getElementById('valHueA').innerHTML = col.toHsl().h;
+      document.getElementById('valSatA').innerHTML = Math.round(col.toHsl().s * 100) + "%";
+      document.getElementById('valLightA').innerHTML = Math.round(col.toHsl().l * 100) + "%";
+      document.getElementById('valHslAlpha').innerHTML = col.toHsl().a;
+      document.getElementById('hslaresult').style.backgroundColor = col.toHslaString();
+      document.getElementById('hslaresulttext').innerHTML = col.toHslaString();
+      if (col.isDark(150) && a > 0.2) {
+        document.getElementById('hslaresulttext').style.color = "#ffffff";
+      } else {
+        document.getElementById('hslaresulttext').style.color = "#1f2d3d";
+      }
+    }
+  </script>
+
+  <hr>
+ 
+  <hr>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_colors_hex.html">❮ Previous</a>    
+    <a class="codehemu-right codehemu-btn" href="html_css.html">Next ❯</a>
+  </div>
+
+</div>
+
+<script type="text/javascript" src="js/copy.js"></script>

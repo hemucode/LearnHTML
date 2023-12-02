@@ -1,0 +1,84 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+  <h1>HTML <span class="color_h1">Links - Different Colors</span></h1>
+  <div class="codehemu-clear nextprev">
+    <a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_links.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_links_bookmarks.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">An HTML link is displayed in a different color depending on
+    whether it has been visited, is unvisited, or is active.</p>
+  <hr>
+
+  <h2>HTML Link Colors</h2>
+  <p>By default, a link will appear like this (in all browsers):</p>
+  <ul>
+    <li>An unvisited link is underlined and blue</li>
+    <li>A visited link is underlined and purple</li>
+    <li>An active link is underlined and red</li>
+  </ul>
+  <p>You can change the link state colors, by using CSS:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Here, an unvisited link will be green with no underline. A visited link
+      will be pink with no underline. An active link will be yellow and underlined.
+      In addition, when mousing over a link (a:hover) it will become red and underlined:</p>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        &lt;style&gt;<br>a:link <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> green<span class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;&nbsp;background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> transparent<span class="cssdelimitercolor" style="color:black">;</span></span>
+          <br>&nbsp;&nbsp;text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+        a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> pink<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> transparent<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>a:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> transparent<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+          &nbsp; text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> underline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+        a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> yellow<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> transparent<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> underline<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>&lt;/style&gt;
+      </span></div>
+      <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <hr>
+
+  <h2>Link Buttons</h2>
+  <p>A link can also be styled as a button, by using CSS:</p>
+  <a class="mytestbtn" href="javascript:void(0)">This is a link</a>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+        &lt;style&gt;<br>a:link, a:visited <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #f44336<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px 25px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          text-decoration<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> none<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; display<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> inline-block<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>a:hover, a:active <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;
+          background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> red<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br>&lt;/style&gt;
+      </span></div>
+      <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+
+  <hr>
+
+  <h2>HTML Link Tags</h2>
+  <table class="ws-table-all notranslate">
+    <tbody>
+      <tr>
+        <th style="width:30%">Tag</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a>&lt;a&gt;</a></td>
+        <td>Defines a hyperlink</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_links.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_links_bookmarks.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

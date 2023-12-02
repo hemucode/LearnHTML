@@ -1,0 +1,180 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+  <h1>HTML <span class="color_h1">Quotation and Citation Elements</span></h1>
+  <div class="codehemu-clear nextprev">
+    <a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_formatting.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_comments.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">In this chapter we will go through the
+    <code class="codehemu-codespan">&lt;blockquote&gt;</code>,<code class="codehemu-codespan">&lt;q&gt;</code>, <code class="codehemu-codespan">&lt;abbr&gt;</code>, <code class="codehemu-codespan">&lt;address&gt;</code>, <code class="codehemu-codespan">&lt;cite&gt;</code>,
+    and <code class="codehemu-codespan">&lt;bdo&gt;</code> HTML elements.
+  </p>
+  <hr>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-white codehemu-padding notranslate">
+      <p>Here is a quote from WWF's website:</p>
+      <blockquote cite="http://www.worldwildlife.org/who/index.html">
+        For 60 years, WWF has worked to help people and nature thrive. As the world's
+        leading conservation organization, WWF works in nearly 100 countries. At every
+        level, we collaborate with people around the world to develop and deliver
+        innovative solutions that protect communities, wildlife, and the places in
+        which they live.</blockquote>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-white')[0])"class="codehemu-btn codehemu-margin-top codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-top codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;blockquote&gt; for Quotations</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;blockquote&gt;</code> element defines a section that
+    is quoted from another source.</p>
+  <p>Browsers usually indent <code class="codehemu-codespan">&lt;blockquote&gt;</code> elements.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Here is a quote from WWF's website:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>blockquote<span class="attributecolor" style="color:red"> cite<span class="attributevaluecolor" style="color:mediumblue">="http://www.worldwildlife.org/who/index.html"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      For 60 years, WWF has worked to help people and nature thrive. As the world's
+      leading conservation organization, WWF works in nearly 100 countries. At every
+      level, we collaborate with people around the world to develop and deliver
+      innovative solutions that protect communities, wildlife, and the places in
+      which they live.<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/blockquote<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;q&gt; for Short Quotations</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;q&gt;</code> tag defines a short quotation.</p>
+  <p>Browsers normally insert quotation marks around the quotation.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's goal is to: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>q<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Build a future where people live in harmony with
+      nature.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/q<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+
+  <h2>HTML &lt;abbr&gt; for Abbreviations</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;abbr&gt;</code> tag defines an abbreviation or an acronym, like "HTML",
+    "CSS", "Mr.",
+    "Dr.", "ASAP", "ATM".</p>
+  <p>Marking abbreviations can give useful information to browsers, translation
+    systems and search-engines.</p>
+  <p><b>Tip:</b> Use the global title attribute to
+    show the description for the
+    abbreviation/acronym when you mouse over the element.&nbsp;</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>abbr<span class="attributecolor" style="color:red"> title<span class="attributevaluecolor" style="color:mediumblue">="World Health Organization"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>WHO<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/abbr<span class="tagcolor" style="color:mediumblue">&gt;</span></span> was founded in
+      1948.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;address&gt; for Contact Information</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;address&gt;</code> tag defines the contact information for the author/owner of a document
+    or an article.</p>
+  <p>The contact information can be an email address, URL, physical address, phone
+    number, social media handle, etc.</p>
+  <p>The text in the <code class="codehemu-codespan">&lt;address&gt;</code> element usually renders in <i>italic,</i>
+    and browsers will
+    always add a line break before and after the <code class="codehemu-codespan">&lt;address&gt;</code> element.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>address<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>Written by John Doe.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br>Visit us at:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>Example.com<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      Box 564, Disneyland<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>USA<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/address<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;cite&gt; for Work Title</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;cite&gt;</code> tag defines the title of a
+    creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.).</p>
+  <p><b>Note:</b> A person's name is not the title of a work.</p>
+  <p>The text in the <code class="codehemu-codespan">&lt;cite&gt;</code> element usually renders in <i>italic</i>.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>cite<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Scream<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/cite<span class="tagcolor" style="color:mediumblue">&gt;</span></span> by Edvard Munch. Painted in 1893.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;bdo&gt; for Bi-Directional Override</h2>
+  <p>BDO stands for Bi-Directional Override.</p>
+  <p>The HTML <code class="codehemu-codespan">&lt;bdo&gt;</code> tag is used to override
+    the current text direction:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>bdo<span class="attributecolor" style="color:red"> dir<span class="attributevaluecolor" style="color:mediumblue">="rtl"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text will be written from right to left<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/bdo<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+        <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+
+  <h2>HTML Quotation and Citation Elements</h2>
+  <table class="ws-table-all notranslate">
+    <tbody>
+      <tr>
+        <th style="width:20%">Tag</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a>&lt;abbr&gt;</a></td>
+        <td>Defines an abbreviation or acronym</td>
+      </tr>
+      <tr>
+        <td><a>&lt;address&gt;</a></td>
+        <td>Defines contact information for the author/owner of a document</td>
+      </tr>
+      <tr>
+        <td><a>&lt;bdo&gt;</a></td>
+        <td>Defines the text direction</td>
+      </tr>
+      <tr>
+        <td><a>&lt;blockquote&gt;</a></td>
+        <td> Defines a section that is quoted from another source</td>
+      </tr>
+      <tr>
+        <td><a>&lt;cite&gt;</a></td>
+        <td>Defines the title of a work</td>
+      </tr>
+      <tr>
+        <td><a>&lt;q&gt;</a></td>
+        <td>Defines a short inline quotation</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_formatting.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_comments.html">Next ❯</a>
+  </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/copy.js"></script>

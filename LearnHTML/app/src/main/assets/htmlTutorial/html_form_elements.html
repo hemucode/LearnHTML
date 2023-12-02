@@ -1,0 +1,304 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1">Form Elements</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+  <a class="codehemu-left codehemu-btn" href="html_forms_attributes.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_form_input_types.html">Next ❯</a>
+</div>
+<hr>
+
+<p class="intro">This chapter describes all the different HTML form elements. </p>
+<hr>
+
+<h2>The HTML &lt;form&gt; Elements</h2>
+<p>The HTML <code class="codehemu-codespan">&lt;form&gt;</code> element can contain one or more of the following form elements:</p>
+<ul>
+<li> <code class="codehemu-codespan">&lt;input&gt;</code></li>
+  <li> <code class="codehemu-codespan">&lt;label&gt;</code></li>
+  <li> <code class="codehemu-codespan">&lt;select&gt;</code></li>
+<li> <code class="codehemu-codespan">&lt;textarea&gt;</code></li>
+<li> <code class="codehemu-codespan">&lt;button&gt;</code></li>
+<li> <code class="codehemu-codespan">&lt;fieldset&gt;</code></li>
+  <li> <code class="codehemu-codespan">&lt;legend&gt;</code></li>
+  <li> <code class="codehemu-codespan">&lt;datalist&gt;</code></li>
+  <li> <code class="codehemu-codespan">&lt;output&gt;</code></li>
+<li> <code class="codehemu-codespan">&lt;option&gt;</code></li>
+<li> <code class="codehemu-codespan">&lt;optgroup&gt;</code></li>
+</ul>
+<hr>
+
+<h2>The &lt;input&gt; Element</h2>
+<p>One of the most used form elements is the <code class="codehemu-codespan">&lt;input&gt;</code> element. </p>
+<p>The <code class="codehemu-codespan">&lt;input&gt;</code> element can be displayed in several ways, depending on the <code class="codehemu-codespan">type</code> 
+attribute.</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+
+
+
+<hr>
+<h2>The &lt;label&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;label&gt;</code> element defines a label for 
+several 
+form elements.</p>
+<p>The <code class="codehemu-codespan">&lt;label&gt;</code> element is useful for 
+screen-reader users, because the screen-reader will read out loud the label when 
+the user focus on the input element.</p>
+<p>The <code class="codehemu-codespan">&lt;label&gt;</code> element also help users who have 
+difficulty clicking on very small regions (such as radio buttons or checkboxes) 
+- because when the user clicks the text within the <code class="codehemu-codespan">&lt;label&gt;</code> element, it toggles 
+the radio button/checkbox.</p>
+<p>The <code class="codehemu-codespan">for</code> attribute of the <code class="codehemu-codespan">&lt;label&gt;</code> tag should 
+be equal to the <code class="codehemu-codespan">id</code> attribute of the <code class="codehemu-codespan">&lt;input&gt;</code>  
+element to bind them together. </p>
+
+
+<hr>
+<h2>The &lt;select&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;select&gt;</code> element defines a drop-down list:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="cars"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Choose a car:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>select<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> name<span class="attributevaluecolor" style="color:mediumblue">="cars"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="volvo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Volvo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="saab"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Saab<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="audi"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Audi<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/select<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+<p>The <code class="codehemu-codespan">&lt;option&gt;</code> element defines an option that can be 
+selected.</p>
+<p>By default, the first item in the drop-down list is selected.</p>
+<p>To define a pre-selected option, add the <code class="codehemu-codespan">selected</code> attribute 
+to the option: </p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span> selected</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+<h3>Visible Values:</h3>
+<p>Use the <code class="codehemu-codespan">size</code> attribute to specify the number of visible values:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="cars"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Choose a car:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>select<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> name<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> size<span class="attributevaluecolor" style="color:mediumblue">="3"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="volvo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Volvo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="saab"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Saab<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="audi"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Audi<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/select<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+<h3>Allow Multiple Selections:</h3>
+<p>Use the <code class="codehemu-codespan">multiple</code> attribute to allow the user to select more than one value:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="cars"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Choose a car:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>select<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> name<span class="attributevaluecolor" style="color:mediumblue">="cars"</span> size<span class="attributevaluecolor" style="color:mediumblue">="4"</span><strong> </strong>multiple</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="volvo"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Volvo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="saab"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Saab<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="fiat"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fiat<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="audi"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Audi<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/option<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/select<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+
+<hr>
+
+<h2>The &lt;textarea&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;textarea&gt;</code> element defines a multi-line input field (a text area):</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="message"</span> rows<span class="attributevaluecolor" style="color:mediumblue">="10"</span> cols<span class="attributevaluecolor" style="color:mediumblue">="30"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>The cat was playing in the garden.<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+
+<p>The <code class="codehemu-codespan">rows</code> attribute specifies the visible number of lines in 
+a text area.</p>
+<p>The <code class="codehemu-codespan">cols</code> attribute specifies the visible width of a text 
+area.</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<textarea rows="10" cols="30">The cat was playing in the garden.
+</textarea>
+<p>You can also define the size of the text area by using CSS:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>textarea<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="message"</span> 
+  style<span class="attributevaluecolor" style="color:mediumblue">="width:200px; height:600px;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>The cat was playing in the garden.<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/textarea<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<hr>
+
+
+<h2>The &lt;button&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;button&gt;</code> element defines a clickable 
+button:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>button<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="button"</span> 
+ onclick<span class="attributevaluecolor" style="color:mediumblue">="alert('Hello World!')"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Click Me!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/button<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<button type="button" onclick="alert('Hello World!')">Click Me!</button>
+<br>
+<div class="codehemu-panel codehemu-note">
+<p><strong>Note:</strong> Always specify the <code class="codehemu-codespan">type</code> attribute for the button element. Different browsers may use different default types for the button element.
+</p>
+</div>
+<hr>
+
+<h2>The &lt;fieldset&gt; and &lt;legend&gt; Elements</h2>
+<p>The <code class="codehemu-codespan">&lt;fieldset&gt;</code> element is used to group related data in a form.</p>
+<p>The <code class="codehemu-codespan">&lt;legend&gt;</code> element defines a caption for the <code class="codehemu-codespan">
+&lt;fieldset&gt;</code>
+element.</p>
+<div class="codehemu-example">
+ <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="action_page2.html"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>fieldset<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>legend<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Personalia:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/legend<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="fname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>First 
+  name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="fname"</span> 
+  value<span class="attributevaluecolor" style="color:mediumblue">="hemanta"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>label<span class="attributecolor" style="color:red"> for<span class="attributevaluecolor" style="color:mediumblue">="lname"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Last name:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/label<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> id<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lname"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Doe"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span> value<span class="attributevaluecolor" style="color:mediumblue">="Submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/fieldset<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span>  </div>
+
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="action_page2.html" target="_salf">
+<fieldset>
+<legend>Personalia:</legend>
+First name:<br>
+<input type="text" name="firstname" value="hemanta"><br>
+Last name:<br>
+<input type="text" name="lastname" value="gayen"><br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form> 
+<hr>
+
+<h2>The &lt;datalist&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;datalist&gt;</code> element specifies a list of pre-defined options for an <code class="codehemu-codespan">&lt;input&gt;</code> element.</p>
+<p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+<p>The <code class="codehemu-codespan">list</code> attribute of the <code class="codehemu-codespan">&lt;input&gt;</code> element, must refer to the
+<code class="codehemu-codespan">id</code> attribute of the <code class="codehemu-codespan">&lt;datalist&gt;</code> element.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> list<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>datalist<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Edge"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Firefox"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Chrome"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Opera"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>option<span class="attributecolor" style="color:red"> value<span class="attributevaluecolor" style="color:mediumblue">="Safari"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/datalist<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<hr>
+
+<h2>The &lt;output&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;output&gt;</code> element represents the result of a calculation (like one 
+performed by a script).</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<p>Perform a calculation and show the result in an <code class="codehemu-codespan">&lt;output&gt;</code> element:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>form<span class="attributecolor" style="color:red"> action<span class="attributevaluecolor" style="color:mediumblue">="/action_page.php"</span><br>&nbsp; oninput<span class="attributevaluecolor" style="color:mediumblue">="x.value=parseInt(a.value)+parseInt(b.value)"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 0<br>
+    &nbsp;
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="range"</span>&nbsp; id<span class="attributevaluecolor" style="color:mediumblue">="a"</span> name<span class="attributevaluecolor" style="color:mediumblue">="a"</span> value<span class="attributevaluecolor" style="color:mediumblue">="50"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 100 +<br>
+    &nbsp;
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="number"</span> id<span class="attributevaluecolor" style="color:mediumblue">="b"</span> name<span class="attributevaluecolor" style="color:mediumblue">="b"</span> value<span class="attributevaluecolor" style="color:mediumblue">="50"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; =<br>
+    &nbsp;
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>output<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="x"</span> for<span class="attributevaluecolor" style="color:mediumblue">="a b"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/output<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="submit"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/form<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+
+</div>
+<hr>
+
+
+
+<h2>HTML Form Elements</h2>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a>&lt;form&gt;</a></td>
+<td> Defines an HTML form for user input</td>
+</tr>
+<tr>
+<td><a>&lt;input&gt;</a></td>
+<td>Defines an input control</td>
+</tr>
+<tr>
+<td><a>&lt;textarea&gt;</a></td>
+<td>Defines a multiline input control (text area)</td>
+</tr>
+<tr>
+<td><a>&lt;label&gt;</a></td>
+<td>Defines a label for an &lt;input&gt; element</td>
+</tr>
+<tr>
+<td><a>&lt;fieldset&gt;</a></td>
+<td>Groups related elements in a form</td>
+</tr>
+<tr>
+<td><a>&lt;legend&gt;</a></td>
+<td>Defines a caption for a &lt;fieldset&gt; element</td>
+</tr>
+<tr>
+<td><a>&lt;select&gt;</a></td>
+<td>Defines a drop-down list</td>
+</tr>
+<tr>
+<td><a>&lt;optgroup&gt;</a></td>
+<td>Defines a group of related options in a drop-down list</td>
+</tr>
+<tr>
+<td><a>&lt;option&gt;</a></td>
+<td>Defines an option in a drop-down list</td>
+</tr>
+<tr>
+<td><a >&lt;button&gt;</a></td>
+<td>Defines a clickable button</td>
+</tr>
+<tr>
+<td><a >&lt;datalist&gt;</a></td>
+<td>Specifies a list of pre-defined options for input controls</td>
+</tr>
+<tr>
+<td><a >&lt;output&gt;</a></td>
+<td>Defines the result of a calculation</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html_forms_attributes.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_form_input_types.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

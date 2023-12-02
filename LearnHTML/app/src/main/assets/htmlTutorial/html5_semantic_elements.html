@@ -1,0 +1,378 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+<h1>HTML <span class="color_h1">Semantic Elements</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+  <a class="codehemu-left codehemu-btn" href="html_computercode_elements.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html5_syntax.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">Semantic elements = elements with a meaning.</p>
+<hr>
+
+<h2>What are Semantic Elements?</h2>
+<p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+<p>Examples of <strong>non-semantic</strong> elements: <code class="codehemu-codespan">&lt;div&gt;</code> and <code class="codehemu-codespan">&lt;span&gt;</code> - Tells nothing about its content.</p>
+<p>Examples of <strong>semantic</strong> elements: <code class="codehemu-codespan">&lt;form&gt;</code>, <code class="codehemu-codespan">&lt;table&gt;</code>, and <code class="codehemu-codespan">&lt;article&gt;</code> - Clearly defines its content.</p>
+<hr>
+
+<h2>Semantic Elements in HTML</h2>
+<p>Many web sites contain HTML code like:
+&lt;div id="nav"&gt; &lt;div class="header"&gt; &lt;div id="footer"&gt;
+to indicate navigation, header, and footer.</p>
+<p>In HTML there are some semantic elements that can be used to define different parts of a web page:
+&nbsp;</p>
+
+<div style="width:374px;float:left">
+ <ul>
+  <li>&lt;article&gt;</li>
+  <li>&lt;aside&gt;</li>
+  <li>&lt;details&gt;</li>
+  <li>&lt;figcaption&gt;</li>
+  <li>&lt;figure&gt;</li>
+  <li>&lt;footer&gt;</li>
+  <li>&lt;header&gt;</li>
+  <li>&lt;main&gt;</li>
+  <li>&lt;mark&gt;</li>
+  <li>&lt;nav&gt;</li>
+  <li>&lt;section&gt;</li>
+  <li>&lt;summary&gt;</li>
+  <li>&lt;time&gt;</li>
+</ul>
+</div>
+<div style="width:260px;float:left;margin-bottom:15px;"><img alt="HTML Semantic Elements" src="img_sem_elements.gif" width="219" height="258">
+</div>
+<p style="clear:both;"></p>
+<hr>
+<h2>HTML &lt;section&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;section&gt;</code> element defines a section in a document.</p>
+<p>According to W3C's HTML documentation: "A section is a thematic grouping of content, typically with a heading."</p>
+<p>Examples of where a <code class="codehemu-codespan">&lt;section&gt;</code> element can be used:</p>
+<ul>
+  <li>Chapters</li>
+  <li>Introduction</li>
+  <li>News items</li>
+  <li>Contact information</li>
+</ul>
+<p>A web page could normally be split into sections for introduction, 
+content, and contact information.</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>Two sections in a document:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The World Wide Fund for Nature (WWF) is an 
+    international organization working on issues regarding the conservation, 
+    research and restoration of the environment, formerly named the World 
+    Wildlife Fund. WWF was founded in 1961.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's Panda symbol<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Panda has become the symbol of WWF. 
+    The well-known panda logo of WWF originated from a panda named Chi Chi that 
+    was transferred from the Beijing Zoo to the London Zoo in the same year of 
+    the establishment of WWF.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml5_section" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+
+
+<h2>HTML &lt;article&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;article&gt;</code> element specifies independent, self-contained content.</p>
+<p>An article should make sense on its own, and it should be possible to 
+distribute it independently from the rest of the web site.</p>
+<p>Examples of where the <code class="codehemu-codespan">&lt;article&gt;</code> element can be used:</p>
+<ul>
+  <li>Forum posts</li>
+  <li>Blog posts</li>
+  <li>User comments</li>
+  <li>Product cards</li>
+  <li>Newspaper articles</li>
+</ul>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>Three articles with independent, self-contained content:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome is a web browser 
+    developed by Google, released in 2008. Chrome is the world's most popular 
+    web browser today!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla 
+    Firefox<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla Firefox is an open-source web browser developed 
+    by Mozilla. Firefox has been the second most popular web browser since 
+    January, 2018.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge is a web browser developed by Microsoft, released in 2015. 
+    Microsoft Edge replaced Internet Explorer.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_article">Try it Yourself »</a>
+</div>
+
+<div class="codehemu-example">
+<h3>Example 2</h3>
+<p>Use CSS to style the &lt;article&gt; element:</p>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>.all-browsers <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 0<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+  padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgray<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>.all-browsers 
+  &gt; h1, .browser <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 5px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>
+  .browser <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br>.browser &gt; h2,  
+  p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; margin<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 4px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 90%<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="all-browsers"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Most 
+  Popular Browsers<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="browser"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Google Chrome is a web browser 
+  developed by Google, released in 2008. Chrome is the world's most popular web 
+  browser today!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="browser"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla Firefox<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Mozilla Firefox is an 
+  open-source web browser developed by Mozilla. Firefox has been the second most 
+  popular web browser since January, 2018.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="browser"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; 
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Microsoft Edge is a web browser developed by Microsoft, released in 2015. 
+  Microsoft Edge replaced Internet Explorer.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml5_article2" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Nesting &lt;article&gt; in &lt;section&gt; or Vice Versa?</h2>
+<p>The <code class="codehemu-codespan">&lt;article&gt;</code> 
+element specifies independent, self-contained content.</p>
+<p>The <code class="codehemu-codespan">&lt;section&gt;</code> element defines section in a document.</p>
+<p>Can we use the definitions to decide how to nest those elements? No, we cannot!</p>
+<p>So, you will find HTML pages with <code class="codehemu-codespan">&lt;section&gt;</code> elements 
+containing <code class="codehemu-codespan">&lt;article&gt;</code> elements, and <code class="codehemu-codespan">&lt;article&gt;</code> elements containing <code class="codehemu-codespan">&lt;section&gt;</code> elements.</p>
+<hr>
+
+<h2>HTML &lt;header&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;header&gt;</code> element represents a container for introductory content or 
+a set of navigational links.</p>
+<p>A <code class="codehemu-codespan">&lt;header&gt;</code> element typically contains:</p>
+<ul>
+  <li>one or more heading elements (&lt;h1&gt; - &lt;h6&gt;)</li>
+  <li>logo or icon</li>
+  <li>authorship information</li>
+</ul>
+<p><b>Note:</b> You can have several <code class="codehemu-codespan">&lt;header&gt;</code> elements in one 
+HTML document. However, <code class="codehemu-codespan">&lt;header&gt;</code> cannot be placed within a <code class="codehemu-codespan">&lt;footer&gt;</code>, <code class="codehemu-codespan">&lt;address&gt;</code> or another <code class="codehemu-codespan">&lt;header&gt;</code> element.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<p>A header for an &lt;article&gt;:&nbsp;</p>
+<div class="codehemu-code notranslate htmlHigh">
+      
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>article<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>header<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;&nbsp;&nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>What Does WWF Do?<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission:<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/header<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>WWF's mission is to stop the degradation of our planet's natural environment,<br>&nbsp; and build a future in which humans live in harmony with nature.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/article<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_header">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>HTML &lt;footer&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;footer&gt;</code> element defines a footer for a document or section.</p>
+<p>A <code class="codehemu-codespan">&lt;footer&gt;</code> element typically contains:</p>
+<ul>
+  <li>authorship information</li>
+  <li>copyright 
+information</li>
+  <li>contact information</li>
+  <li>sitemap</li>
+  <li>back to top links</li>
+  <li>related documents</li>
+</ul>
+<p>You can have several <code class="codehemu-codespan">&lt;footer&gt;</code> elements in one document.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>A footer section in a document:</p>
+<div class="codehemu-code notranslate htmlHigh">
+      
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Author: Hege Refsnes<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="mailto:hege@example.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>hege@example.com<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/footer<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_footer">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>HTML &lt;nav&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;nav&gt;</code> element defines a set of navigation links.</p>
+<div class="codehemu-panel codehemu-note">
+<p>Notice that NOT all links of a document should be inside a <code class="codehemu-codespan">&lt;nav&gt;</code> element. The 
+<code class="codehemu-codespan">&lt;nav&gt;</code> element is intended only for major blocks of navigation links. </p>
+  <p>Browsers, such as screen readers for disabled users, can use this element 
+  to determine whether to omit the initial rendering of this content.</p>
+</div>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>A set of navigation links:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/html/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/css/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>CSS<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/js/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>JavaScript<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> |<br>
+ &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="/jquery/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>jQuery<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/nav<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_nav">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>HTML &lt;aside&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;aside&gt;</code> element defines some content aside from the content it is 
+placed in (like a sidebar).</p>
+<p>The <code class="codehemu-codespan">&lt;aside&gt;</code> content should be 
+indirectly related to the surrounding content.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>Display some content aside from the content it is placed in:</p>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center this summer. The weather was 
+    nice, and Epcot was amazing! I had a great summer together with my 
+    family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Epcot Center<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h4<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Epcot is a theme 
+    park at Walt Disney World Resort featuring exciting attractions, 
+    international pavilions, award-winning fireworks and seasonal special 
+    events.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml5_aside">Try it Yourself »</a>
+</div>
+
+<div class="codehemu-example">
+<h3>Example 2</h3>
+<p>Use CSS to style the &lt;aside&gt; element:</p>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>aside <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; width<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 30%<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+  padding-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; margin-left<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 15px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; float<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> right<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+  font-style<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> italic<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgray<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot 
+  center this summer. The weather was nice, and Epcot was amazing! I had a great 
+  summer together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>The Epcot center is a 
+  theme park at Walt Disney World Resort featuring exciting attractions, 
+  international pavilions, award-winning fireworks and seasonal special 
+  events.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/aside<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center 
+  this summer. The weather was nice, and Epcot was amazing! I had a great summer 
+  together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My family and I visited The Epcot center 
+  this summer. The weather was nice, and Epcot was amazing! I had a great summer 
+  together with my family!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[7])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml5_aside2" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>HTML &lt;figure&gt; and &lt;figcaption&gt; Elements</h2>
+<p>The <code class="codehemu-codespan">&lt;figure&gt;</code> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.</p>
+<p>The <code class="codehemu-codespan">&lt;figcaption&gt;</code> tag defines a caption for a <code class="codehemu-codespan">&lt;figure&gt;</code> element. The <code class="codehemu-codespan">&lt;figcaption&gt;</code> element can be placed as the first or 
+as the last child of a <code class="codehemu-codespan">&lt;figure&gt;</code> element.</p>
+<p>The <code class="codehemu-codespan">&lt;img&gt;</code> element defines the actual image/illustration.&nbsp;</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="pic_trulli.jpg"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Trulli"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Fig1. - Trulli, Puglia, Italy.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figcaption<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/figure<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[8])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+
+  <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_figcaption" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Why Semantic Elements?</h2>
+<p>According to the W3C: "A semantic Web allows data to be shared and reused across applications, 
+enterprises, and communities."</p>
+<hr>
+
+<h2>Semantic Elements in HTML</h2>
+<p>Below is a list of some of the semantic elements in HTML.</p>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a>&lt;article&gt;</a></td>
+<td>Defines independent, self-contained content</td>
+</tr>
+<tr>
+<td><a>&lt;aside&gt;</a></td>
+<td>Defines content aside from the page content</td>
+</tr>
+<tr>
+<td><a>&lt;details&gt;</a></td>
+<td>Defines additional details that the user can view or hide</td>
+</tr>
+<tr>
+<td><a>&lt;figcaption&gt;</a></td>
+<td>Defines a caption for a &lt;figure&gt; element</td>
+</tr>
+<tr>
+<td><a>&lt;figure&gt;</a></td>
+<td>Specifies self-contained content, like illustrations, diagrams, photos, code 
+listings, etc.</td>
+</tr>
+<tr>
+<td><a>&lt;footer&gt;</a></td>
+<td>Defines a footer for a document or section</td>
+</tr>
+<tr>
+<td><a>&lt;header&gt;</a></td>
+<td>Specifies a header for a document or section</td>
+</tr>
+<tr>
+<td><a>&lt;main&gt;</a></td>
+<td>Specifies the main content of a document</td>
+</tr>
+<tr>
+<td><a>&lt;mark&gt;</a></td>
+<td>Defines marked/highlighted text</td>
+</tr>
+<tr>
+<td><a>&lt;nav&gt;</a></td>
+<td>Defines navigation links</td>
+</tr>
+<tr>
+<td><a>&lt;section&gt;</a></td>
+<td>Defines a section in a document</td>
+</tr>
+<tr>
+<td><a>&lt;summary&gt;</a></td>
+<td>Defines a visible heading for a &lt;details&gt; element</td>
+</tr>
+<tr>
+<td><a>&lt;time&gt;</a></td>
+<td>Defines a date/time</td>
+</tr>
+</tbody></table>
+
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html_computercode_elements.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html5_syntax.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

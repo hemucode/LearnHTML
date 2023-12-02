@@ -1,0 +1,147 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+  <h1>HTML <span class="color_h1">Background Images</span></h1>
+  <div class="codehemu-clear nextprev">
+  	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_images_imagemap.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_images_picture.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">A background image can be specified for almost any HTML element.</p>
+  <hr>
+
+  <h2>Background Image on a HTML element</h2>
+  <p>To add a background image on an HTML element, use the HTML <code class="codehemu-codespan">style</code> attribute
+    and the CSS <code class="codehemu-codespan">background-image</code> property:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Add a background image on a HTML element:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="attributecolor" style="color:red"> style<span class="attributevaluecolor" style="color:mediumblue">="background-image: url('example_img_girl.jpg');"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background3" target="_self">Try it Yourself »</a>
+  </div>
+
+  <p>You can also specify the background image in the <code class="codehemu-codespan">&lt;style&gt;</code>
+    element, in the <code class="codehemu-codespan">&lt;head&gt;</code>
+    section:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Specify the background image in the <code class="codehemu-codespan">&lt;style&gt;</code>
+      element:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>p <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('example_img_girl.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background4" target="_self">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <h2>Background Image on a Page</h2>
+  <p>If you want the entire page to have a background image, you must
+    specify the background image on the <code class="codehemu-codespan">&lt;body&gt;</code> element:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Add a background image for the entire page:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('example_img_girl.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background5" target="_self">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <h2>Background Repeat</h2>
+  <p>If the background image is smaller than the element, the image will repeat itself,
+    horizontally and vertically, until it reaches the end of the element:</p>
+
+  <div style="height:300px;background-image:url('example_img_girl.jpg');">
+  </div>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('example_img_girl.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background6" target="_self">Try it Yourself »</a>
+  </div>
+
+  <p>To avoid the background image from repeating itself, set the <code class="codehemu-codespan">background-repeat</code> property
+    to <code class="codehemu-codespan">no-repeat</code>.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('example_img_girl.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> no-repeat<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background6_1" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <hr>
+
+  <h2>Background Cover</h2>
+  <p>If you want the background image to cover the entire element, you
+    can set the <code class="codehemu-codespan">background-size</code> property to
+    <code class="codehemu-codespan">cover.</code>
+  </p>
+  <p>Also, to make sure the entire element is always covered, set the
+    <code class="codehemu-codespan">background-attachment</code> property to <code class="codehemu-codespan">fixed:</code>
+  </p>
+  <p>This way, the background image will cover the entire element, with no stretching (the image will
+    keep its original proportions):</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('example_img_girl.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> no-repeat<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-attachment<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> fixed<span class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+          background-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> cover<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background7" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>Background Stretch</h2>
+  <p>If you want the background image to stretch to fit the entire element, you
+    can set the <code class="codehemu-codespan">background-size</code> property to
+    <code class="codehemu-codespan">100% 100%</code>:
+  </p>
+  <div style="height:300px;background-image:url('example_img_girl.jpg');background-size:100% 100%;">
+  </div>
+  <p>Try resizing the browser window, and you will see that the image will stretch, but always cover the entire element.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-image<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> url('example_img_girl.jpg')<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;
+          background-repeat<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> no-repeat<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; background-attachment<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> fixed<span class="cssdelimitercolor" style="color:black">;</span></span> <br>&nbsp;
+          background-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 100% 100%<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+        </span><span class="cssdelimitercolor" style="color:black">}</span><br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_background8" target="_self">Try it Yourself »</a>
+  </div>
+  <hr>
+
+
+
+
+
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_images_imagemap.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_images_picture.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

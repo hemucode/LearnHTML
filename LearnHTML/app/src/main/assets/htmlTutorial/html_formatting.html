@@ -1,0 +1,240 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+  <h1>HTML <span class="color_h1">Text Formatting</span></h1>
+  <div class="codehemu-clear nextprev">
+    <a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_styles.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_quotation_elements.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">HTML contains several elements for defining text with a special meaning.</p>
+  <hr>
+
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-white codehemu-padding notranslate">
+      <p><b>This text is bold</b></p>
+      <p><i>This text is italic</i></p>
+      <p>This is<sub> subscript</sub> and <sup>superscript</sup></p>
+    </div>
+    <a class="codehemu-btn codehemu-margin-top codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML Formatting Elements</h2>
+
+  <p>Formatting elements were designed to display special types of text:</p>
+  <ul>
+    <li><code class="codehemu-codespan">&lt;b&gt;</code> - Bold text</li>
+    <li><code class="codehemu-codespan">&lt;strong&gt;</code> - Important text</li>
+    <li><code class="codehemu-codespan">&lt;i&gt;</code> - Italic text</li>
+    <li><code class="codehemu-codespan">&lt;em&gt;</code> - Emphasized text</li>
+    <li><code class="codehemu-codespan">&lt;mark&gt;</code> - Marked text</li>
+    <li><code class="codehemu-codespan">&lt;small&gt;</code> - Smaller text</li>
+    <li><code class="codehemu-codespan">&lt;del&gt;</code> - Deleted text</li>
+    <li><code class="codehemu-codespan">&lt;ins&gt;</code> - Inserted text</li>
+    <li><code class="codehemu-codespan">&lt;sub&gt;</code> - Subscript text</li>
+    <li><code class="codehemu-codespan">&lt;sup&gt;</code> - Superscript text</li>
+  </ul>
+  <hr>
+
+  <h2>HTML &lt;b&gt; and &lt;strong&gt; Elements</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;b&gt;</code> element defines bold text,
+    without any extra importance.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is bold<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <p>The HTML <code class="codehemu-codespan">&lt;strong&gt;</code> element defines text
+    with strong importance. The content inside is typically displayed in bold.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>strong<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is
+      important!<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/strong<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  
+  <hr>
+  <h2>HTML &lt;i&gt; and &lt;em&gt; Elements</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;i&gt;</code> element defines a part of
+    text in an alternate voice or mood. The content inside is typically displayed in
+    italic.</p>
+  <p><strong>Tip:</strong> The <code class="codehemu-codespan">&lt;i&gt;</code> tag is often used to indicate a technical term,
+    a phrase from another language, a thought, a ship name, etc.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is italic<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <p>The HTML <code class="codehemu-codespan">&lt;em&gt;</code> element defines
+    emphasized text. The content inside is typically displayed in italic.</p>
+  <p><strong>Tip:</strong> A screen reader will pronounce the words in <code class="codehemu-codespan">&lt;em&gt;</code>
+    with an emphasis, using verbal stress.</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>em<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This text is
+      emphasized<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/em<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;small&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;small&gt;</code> element defines
+    smaller text:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>small<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is some smaller text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/small<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;mark&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;mark&gt;</code> element defines text
+    that should be marked or highlighted:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Do not forget to buy <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>mark<span class="tagcolor" style="color:mediumblue">&gt;</span></span>milk<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/mark<span class="tagcolor" style="color:mediumblue">&gt;</span></span> today.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML &lt;del&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;del&gt;</code> element defines text
+    that has been deleted from a document. Browsers will usually strike a line
+    through deleted text:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My favorite color is <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>del<span class="tagcolor" style="color:mediumblue">&gt;</span></span>blue<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/del<span class="tagcolor" style="color:mediumblue">&gt;</span></span> red.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[6])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <h2>HTML &lt;ins&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;ins&gt;</code> element defines a text
+    that has been inserted into a document. Browsers will usually underline inserted
+    text:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My favorite color is <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>del<span class="tagcolor" style="color:mediumblue">&gt;</span></span>blue<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/del<span class="tagcolor" style="color:mediumblue">&gt;</span></span> <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ins<span class="tagcolor" style="color:mediumblue">&gt;</span></span>red<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ins<span class="tagcolor" style="color:mediumblue">&gt;</span></span>.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[7])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <h2>HTML &lt;sub&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;sub&gt;</code> element defines
+    subscript text. Subscript text appears half a character below the normal line,
+    and is sometimes rendered in a smaller font. Subscript text can be used for
+    chemical formulas, like H<sub>2</sub>O:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This
+      is <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>sub<span class="tagcolor" style="color:mediumblue">&gt;</span></span>subscripted<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/sub<span class="tagcolor" style="color:mediumblue">&gt;</span></span> text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[8])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <h2>HTML &lt;sup&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;sup&gt;</code> element defines
+    superscript text. Superscript text appears half a character above the normal
+    line, and is sometimes rendered in a smaller font. Superscript text can be used
+    for footnotes, like WWW<sup>[1]</sup>:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This
+      is <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>sup<span class="tagcolor" style="color:mediumblue">&gt;</span></span>superscripted<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/sup<span class="tagcolor" style="color:mediumblue">&gt;</span></span> text.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[9])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+  <hr>
+
+  <h2>HTML Text Formatting Elements</h2>
+  <table class="ws-table-all notranslate">
+    <tbody>
+      <tr>
+        <th style="width:20%">Tag</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a>&lt;b&gt;</a></td>
+        <td>Defines bold text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;em&gt;</a></td>
+        <td>Defines emphasized text&nbsp;</td>
+      </tr>
+      <tr>
+        <td><a>&lt;i&gt;</a></td>
+        <td>Defines a part of text in an alternate voice or mood</td>
+      </tr>
+      <tr>
+        <td><a>&lt;small&gt;</a></td>
+        <td>Defines smaller text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;strong&gt;</a></td>
+        <td>Defines important text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;sub&gt;</a></td>
+        <td>Defines subscripted text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;sup&gt;</a></td>
+        <td>Defines superscripted text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;ins&gt;</a></td>
+        <td>Defines inserted text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;del&gt;</a></td>
+        <td>Defines deleted text</td>
+      </tr>
+      <tr>
+        <td><a>&lt;mark&gt;</a></td>
+        <td>Defines marked/highlighted text</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_styles.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_quotation_elements.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

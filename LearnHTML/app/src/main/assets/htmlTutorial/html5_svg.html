@@ -1,0 +1,176 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1"> SVG Graphics</span></h1>
+<div class="codehemu-clear nextprev">
+	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html5_canvas.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_media.html">Next ❯</a>
+</div>
+<hr>
+
+<p class="intro">SVG defines vector-based graphics in XML format.</p>
+<hr>
+
+<h2>What is SVG?</h2>
+<ul>
+  <li>SVG stands for Scalable Vector Graphics</li>
+  <li>SVG is used to define graphics for the Web</li>
+  <li>SVG is a W3C recommendation</li>
+</ul>
+<hr>
+
+<h2>The HTML &lt;svg&gt; Element</h2>
+<p>The HTML <code class="codehemu-codespan">&lt;svg&gt;</code> element is a container for SVG graphics.</p>
+<p>SVG has several methods for drawing paths, boxes, circles, text, and graphic images.</p>
+<hr>
+
+
+<h2>SVG Circle</h2>
+<svg width="100" height="100">
+  <circle cx="50" cy="50" r="40" stroke="green" stroke-width="4" fill="yellow"></circle>
+</svg>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> 
+ width<span class="attributevaluecolor" style="color:mediumblue">="100"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>circle<span class="attributecolor" style="color:red"> cx<span class="attributevaluecolor" style="color:mediumblue">="50"</span> cy<span class="attributevaluecolor" style="color:mediumblue">="50"</span> r<span class="attributevaluecolor" style="color:mediumblue">="40"</span> stroke<span class="attributevaluecolor" style="color:mediumblue">="green"</span> 
+ stroke-width<span class="attributevaluecolor" style="color:mediumblue">="4"</span> fill<span class="attributevaluecolor" style="color:mediumblue">="yellow"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_svg_circle" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+<h2>SVG Rectangle</h2>
+<svg width="400" height="100">
+<rect width="400" height="100" style="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"></rect>
+</svg>
+<br><br>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>rect<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="100"</span> style<span class="attributevaluecolor" style="color:mediumblue">="fill:rgb(0,0,255);stroke-width:10;stroke:rgb(0,0,0)"</span> 
+ /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_svg_rect" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+<h2>SVG Rounded Rectangle</h2>
+<svg width="300" height="180">
+  <rect x="10" y="10" rx="20" ry="20" width="150" height="150" style="fill:red;stroke:black;stroke-width:5;opacity:0.5"></rect>
+  Sorry, your browser does not support inline SVG.  
+</svg>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="400"</span> height<span class="attributevaluecolor" style="color:mediumblue">="180"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>rect<span class="attributecolor" style="color:red"> x<span class="attributevaluecolor" style="color:mediumblue">="50"</span> y<span class="attributevaluecolor" style="color:mediumblue">="20"</span> rx<span class="attributevaluecolor" style="color:mediumblue">="20"</span> ry<span class="attributevaluecolor" style="color:mediumblue">="20"</span> 
+ width<span class="attributevaluecolor" style="color:mediumblue">="150"</span> height<span class="attributevaluecolor" style="color:mediumblue">="150"</span><br>&nbsp; 
+ style<span class="attributevaluecolor" style="color:mediumblue">="fill:red;stroke:black;stroke-width:5;opacity:0.5"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_svg_rect_round">Try it Yourself »</a>
+</div>
+<hr>
+<h2>SVG Star</h2>
+<svg width="300" height="200">
+<polygon points="100,10 40,198 190,78 10,78 160,198" style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"></polygon>
+Sorry, your browser does not support inline SVG.  
+</svg>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="300"</span> height<span class="attributevaluecolor" style="color:mediumblue">="200"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>polygon<span class="attributecolor" style="color:red"> points<span class="attributevaluecolor" style="color:mediumblue">="100,10 40,198 190,78 10,78 160,198"</span><br>
+ &nbsp; style<span class="attributevaluecolor" style="color:mediumblue">="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  </div>
+   <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_svg_star" target="_self">Try it Yourself »</a>
+</div>
+<hr>
+<h2>SVG Logo</h2>
+<svg height="130" width="500">
+   <defs>
+     <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+       <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1"></stop>
+       <stop offset="100%" style="stop-color:rgb(255,0,0);stop-opacity:1"></stop>
+     </linearGradient>
+   </defs>
+   <ellipse cx="100" cy="70" rx="85" ry="55" fill="url(#grad1)"></ellipse>
+   <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="86">SVG</text>
+   Sorry, your browser does not support inline SVG.
+</svg> 
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>svg<span class="attributecolor" style="color:red"> height<span class="attributevaluecolor" style="color:mediumblue">="130"</span> width<span class="attributevaluecolor" style="color:mediumblue">="500"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>defs<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>linearGradient<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="grad1"</span> x1<span class="attributevaluecolor" style="color:mediumblue">="0%"</span> 
+ y1<span class="attributevaluecolor" style="color:mediumblue">="0%"</span> x2<span class="attributevaluecolor" style="color:mediumblue">="100%"</span> y2<span class="attributevaluecolor" style="color:mediumblue">="0%"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>stop<span class="attributecolor" style="color:red"> offset<span class="attributevaluecolor" style="color:mediumblue">="0%"</span> style<span class="attributevaluecolor" style="color:mediumblue">="stop-color:rgb(255,255,0);stop-opacity:1"</span> 
+ /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>stop<span class="attributecolor" style="color:red"> offset<span class="attributevaluecolor" style="color:mediumblue">="100%"</span> style<span class="attributevaluecolor" style="color:mediumblue">="stop-color:rgb(255,0,0);stop-opacity:1"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+ &nbsp;&nbsp;&nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/linearGradient<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/defs<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ellipse<span class="attributecolor" style="color:red"> cx<span class="attributevaluecolor" style="color:mediumblue">="100"</span> cy<span class="attributevaluecolor" style="color:mediumblue">="70"</span> rx<span class="attributevaluecolor" style="color:mediumblue">="85"</span> ry<span class="attributevaluecolor" style="color:mediumblue">="55"</span> 
+ fill<span class="attributevaluecolor" style="color:mediumblue">="url(#grad1)"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>text<span class="attributecolor" style="color:red"> fill<span class="attributevaluecolor" style="color:mediumblue">="#ffffff"</span> font-size<span class="attributevaluecolor" style="color:mediumblue">="45"</span> 
+ font-family<span class="attributevaluecolor" style="color:mediumblue">="Verdana"</span> x<span class="attributevaluecolor" style="color:mediumblue">="50"</span> y<span class="attributevaluecolor" style="color:mediumblue">="86"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>SVG<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/text<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; Sorry, your browser does not 
+ support inline SVG.<br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/svg<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  </div>
+   <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_svg_logo" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+<h2>Differences Between SVG and Canvas</h2>
+<p>SVG is a language for describing 2D graphics in XML.</p>
+<p>Canvas draws 2D graphics, on the fly (with JavaScript).</p>
+<p>SVG is XML based, which means that every element is available within the SVG 
+DOM. You can attach JavaScript event handlers for an element.</p>
+<p>In SVG, each drawn shape is remembered as an object. If attributes of an SVG 
+object are changed, the browser can automatically re-render the shape.</p>
+<p>Canvas is rendered pixel by pixel. In canvas, once the graphic is drawn, it is forgotten by the browser. If its 
+position should be changed, the entire scene needs to be redrawn, including any 
+objects that might have been covered by the graphic.</p>
+<hr>
+
+<h2>Comparison of Canvas and SVG</h2>
+<p>The table below shows some important differences between Canvas and SVG:</p>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th style="width:50%">Canvas</th>
+<th style="width:50%">SVG</th>
+</tr>
+<tr>
+<td>
+<ul>
+  <li>Resolution dependent</li>
+  <li>No support for event handlers</li>
+  <li>Poor text rendering capabilities</li>
+  <li>You can save the resulting image as .png or .jpg</li>
+  <li>Well suited for graphic-intensive games</li>
+</ul>
+</td>
+<td>
+<ul>
+  <li>Resolution independent</li>
+  <li>Support for event handlers</li>
+  <li>Best suited for applications with large rendering areas (Google Maps)</li>
+  <li>Slow rendering if complex (anything that uses the DOM a lot will be slow)</li>
+  <li>Not suited for game applications</li>
+</ul>
+</td>
+</tr>
+</tbody></table>
+<hr>
+<h2>SVG Tutorial</h2>
+
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html5_canvas.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_media.html">Next ❯</a>
+</div>
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

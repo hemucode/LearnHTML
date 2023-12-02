@@ -1,0 +1,181 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+<h1>HTML<span class="color_h1"> Versus XHTML</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_urlencode.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_forms.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">XHTML is a stricter, more XML-based version of HTML.</p>
+<hr>
+
+<h2>What is XHTML?</h2>
+<ul>
+<li>XHTML stands for E<strong>X</strong>tensible <strong>H</strong>yper<strong>T</strong>ext 
+<strong>M</strong>arkup <strong>L</strong>anguage</li>
+<li>XHTML is a stricter, more XML-based version of HTML</li>
+<li>XHTML is HTML defined as an XML application</li>
+<li>XHTML is supported by all major browsers</li>
+</ul>
+<hr>
+
+<h2>Why XHTML?</h2>
+<p>XML is a markup language where all documents must be marked up correctly (be "well-formed").</p>
+<p>XHTML was developed to make HTML more extensible and flexible to work with 
+other data formats (such as XML). In addition, browsers ignore errors in HTML 
+pages, and try to display the website even if it has some errors in the markup. 
+So XHTML comes with a much stricter error handling.</p>
+<p>If you want to study XML, please read our <a href="/xml/default.html">XML Tutorial</a>.</p>
+<hr>
+
+<h2>The Most Important Differences from HTML</h2>
+<ul>
+  <li>&lt;!DOCTYPE&gt; is <strong>mandatory</strong></li>
+  <li>The xmlns attribute in &lt;html&gt; is <strong>mandatory</strong></li>
+  <li>&lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; are <strong>mandatory</strong></li>
+  <li>Elements must always be <b> properly nested</b></li>
+  <li>Elements must always be <b>closed</b></li>
+  <li>Elements must always be in <b>lowercase</b></li>
+  <li>Attribute names must always be in <b>lowercase</b></li>
+  <li>Attribute values must always be <b>quoted</b></li>
+  <li>Attribute minimization is <b>forbidden</b></li>
+</ul>
+
+<hr>
+<h2>XHTML - &lt;!DOCTYPE ....&gt; Is Mandatory</h2>
+<p>An XHTML document must have an XHTML &lt;!DOCTYPE&gt; declaration.</p>
+<p>The &lt;html&gt;, &lt;head&gt;, &lt;title&gt;, and &lt;body&gt; elements must also be present, and the xmlns attribute in &lt;html&gt; 
+must specify the xml namespace for the document.</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<p>Here is an XHTML document with a minimum of required tags:&nbsp;</p>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html PUBLIC "-//W3C//DTD XHTML 1.1//EN"<br>
+  "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> xmlns<span class="attributevaluecolor" style="color:mediumblue">="http://www.w3.org/1999/xhtml"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Title of document<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>&nbsp; <em>some content here...</em> <br>
+  <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+
+<h2>XHTML Elements Must be Properly Nested</h2>
+<p>In XHTML, elements must always be properly nested within each other, like this:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Some 
+  text<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>i<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Some 
+  text<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/b<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/i<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>XHTML Elements Must Always be Closed</h2>
+<p>In XHTML, elements must always be closed, like this:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is another paragraph<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is another paragraph </div></div>
+<hr>
+
+<h2>XHTML Empty Elements Must Always be Closed</h2>
+<p>In XHTML, empty elements must always be closed, like this:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+A break: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+A horizontal rule: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>hr<span class="attributecolor" style="color:red"> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+An image: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="happy.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Happy face"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+A break: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>br<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+A horizontal rule: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>hr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+An image: <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="happy.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="Happy face"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>XHTML Elements Must be in Lowercase</h2>
+<p>In XHTML, element names must always be in lowercase, like this:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>P<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/P<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>XHTML Attribute Names Must be in Lowercase</h2>
+<p>In XHTML, attribute names must always be in lowercase, like this:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.codehemu.com/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> HREF<span class="attributevaluecolor" style="color:mediumblue">="https://www.codehemu.com/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>XHTML Attribute Values Must be Quoted</h2>
+<p>In XHTML, attribute values must always be quoted, like this:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.codehemu.com/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">=https://www.codehemu.com/</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>XHTML Attribute Minimization is Forbidden</h2>
+<p>In XHTML, attribute minimization is forbidden:</p>
+<div class="codehemu-example">
+<h3>Correct:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle"</span> value<span class="attributevaluecolor" style="color:mediumblue">="car"</span> checked<span class="attributevaluecolor" style="color:mediumblue">="checked"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lastname"</span> disabled<span class="attributevaluecolor" style="color:mediumblue">="disabled"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Wrong:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="checkbox"</span> name<span class="attributevaluecolor" style="color:mediumblue">="vehicle"</span> value<span class="attributevaluecolor" style="color:mediumblue">="car"</span> checked /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>input<span class="attributecolor" style="color:red"> type<span class="attributevaluecolor" style="color:mediumblue">="text"</span> name<span class="attributevaluecolor" style="color:mediumblue">="lastname"</span> disabled /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+
+<h2>Validate HTML With The W3C Validator</h2>
+<form method="get" action="https://validator.w3.org/check" target="_blank">
+<p>Put your web address in the box below:</p>
+<p><input name="uri" size="60" value="https://www.codehemu.com/" style="max-width:100%"></p>
+<p><input type="submit" value="Validate the page"></p>
+</form>
+<br>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_urlencode.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_forms.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

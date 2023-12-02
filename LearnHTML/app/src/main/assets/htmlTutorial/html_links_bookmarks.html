@@ -1,0 +1,77 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+  <h1>HTML <span class="color_h1">Links - Create Bookmarks</span></h1>
+  <div class="codehemu-clear nextprev">
+  	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_links_colors.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_images.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">HTML links can be used to create bookmarks, so that readers can
+    jump to specific parts of a web page.</p>
+  <hr>
+
+  <h2>Create a Bookmark in HTML</h2>
+  <p>Bookmarks can be useful if a web page is very long.</p>
+  <p>To create a bookmark - first create the bookmark, then add a link
+    to it.</p>
+  <p>When the link is clicked, the page will scroll down or up to the location with the
+    bookmark.</p>
+  <h2>Example</h2>
+  <p>First, use the <code class="codehemu-codespan">id</code> attribute to create a
+    bookmark:</p>
+  <div class="codehemu-example">
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Chapter 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jump to Chapter 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+
+  <p>You can also add a link to a bookmark on another page:</p>
+  <div class="codehemu-example">
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="html_demo.html#C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jump to Chapter 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <hr>
+
+  <hr>
+  <h2>Chapter Summary</h2>
+  <ul>
+    <li>Use the <code class="codehemu-codespan">id</code> attribute (id="<em>value</em>") to define bookmarks in a page</li>
+    <li>Use the <code class="codehemu-codespan">href</code> attribute (href="#<em>value</em>") to link to the bookmark</li>
+  </ul>
+  <hr>
+
+
+  <h2>HTML Link Tags</h2>
+  <table class="ws-table-all notranslate">
+    <tbody>
+      <tr>
+        <th style="width:30%">Tag</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a>&lt;a&gt;</a></td>
+        <td>Defines a hyperlink</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_links_colors.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_images.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

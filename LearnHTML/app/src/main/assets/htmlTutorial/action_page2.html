@@ -1,0 +1,22 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" style="margin:10px;">
+    <div class="codehemu-clear nextprev">
+         <a class="codehemu-left codehemu-btn" onclick="window.history.back()" >❮ Previous</a>
+    </div>
+</div>
+<body class="codehemu-container codehemu-light-grey">
+<h1>Submitted Form Data</h1>
+<h2>Your input was received as:</h2>
+
+
+<textarea class="codehemu-container gffg codehemu-large codehemu-border"></textarea>
+<p>The server has processed your input and returned this answer.</p>
+<div class="codehemu-panel codehemu-pale-yellow codehemu-leftbar codehemu-border-yellow">
+
+</div>
+
+</body>
+
+<script type="text/javascript">
+    document.querySelector(".gffg").innerText = window.location.search.substring(1);
+</script>

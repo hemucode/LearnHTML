@@ -1,0 +1,122 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+  <h1>HTML<span class="color_h1"> Basic Examples</span></h1>
+  <div class="codehemu-clear nextprev">
+    <a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_editors.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_elements.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">In this chapter we will show some basic HTML examples.</p>
+  <p class="intro">Don't worry if we use tags you have not learned about yet.</p>
+  <hr>
+
+  <h2>HTML Documents</h2>
+  <p>All HTML documents must start with a document type declaration: <code class="codehemu-codespan">&lt;!DOCTYPE html&gt;</code>.</p>
+  <p>The HTML document itself begins with <code class="codehemu-codespan">&lt;html&gt;</code> and ends with <code class="codehemu-codespan">&lt;/html&gt;</code>.</p>
+  <p>The visible part of the HTML document is between <code class="codehemu-codespan">&lt;body&gt;</code> and <code class="codehemu-codespan">&lt;/body&gt;</code>. </p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My First Heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>My first paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" target="_self" href="../htmlEditor/index.html">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>The &lt;!DOCTYPE&gt; Declaration</h2>
+  <p>The <code class="codehemu-codespan">&lt;!DOCTYPE&gt;</code> declaration represents the document type, and helps browsers to display web pages correctly.</p>
+  <p>It must only appear once, at the top of the page (before any HTML tags). </p>
+  <p>The <code class="codehemu-codespan">&lt;!DOCTYPE&gt;</code> declaration is not case sensitive.</p>
+  <p>The <code class="codehemu-codespan">&lt;!DOCTYPE&gt;</code> declaration for HTML5 is:</p>
+  <div class="codehemu-example">
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+  </div>
+  <hr>
+
+  <h2>HTML Headings</h2>
+  <p>HTML headings are defined with the <code class="codehemu-codespan">&lt;h1&gt;</code> to <code class="codehemu-codespan">&lt;h6&gt;</code> tags.</p>
+  <p><code class="codehemu-codespan">&lt;h1&gt;</code> defines the most important heading. <code class="codehemu-codespan">&lt;h6&gt;</code> defines the least important
+    heading:&nbsp;</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 1<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 2<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is heading 3<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h3<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+
+  <hr>
+  <hr>
+
+  <h2>HTML Paragraphs</h2>
+  <p>HTML paragraphs are defined with the <code class="codehemu-codespan">&lt;p&gt;</code> tag:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is another paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>HTML Links</h2>
+  <p>HTML links are defined with the <code class="codehemu-codespan">&lt;a&gt;</code> tag:</p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.codehemu.com"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a link<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+  <p>The link's destination is specified in the <code class="codehemu-codespan">href</code> attribute.&nbsp;</p>
+  <p>Attributes are used to provide additional information about HTML elements.</p>
+  <p>You will learn more about attributes in a later chapter.</p>
+  <hr>
+
+  <h2>HTML Images</h2>
+  <p>HTML images are defined with the <code class="codehemu-codespan">&lt;img&gt;</code> tag.</p>
+  <p>The source file (<code class="codehemu-codespan">src</code>), alternative text (<code class="codehemu-codespan">alt</code>),
+    <code class="codehemu-codespan">width</code>, and <code class="codehemu-codespan">height</code> are provided as attributes:
+  </p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="codehemu.png"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="codehemu.com"</span> width<span class="attributevaluecolor" style="color:mediumblue">="104"</span> height<span class="attributevaluecolor" style="color:mediumblue">="142"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[5])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a target="_self" href="../htmlEditor/index.html" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+  </div>
+  <hr>
+
+  <h2>How to View HTML Source</h2>
+  <p>Have you ever seen a Web page and wondered "Hey! How did they do that?"</p>
+  <h3>View HTML Source Code:</h3>
+  <p>Click CTRL + U in an HTML page, or right-click on the page and select "View Page Source". This will open a
+    new tab
+    containing the HTML source code of the page.</p>
+  <h3>Inspect an HTML Element:</h3>
+  <p>Right-click on an element (or a blank area), and choose "Inspect" to see what elements are made up of (you will see both
+    the HTML and the CSS). You can also edit the HTML or CSS on-the-fly in the
+    Elements or Styles panel that opens.</p>
+
+
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_editors.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_elements.html">Next ❯</a>
+  </div>
+
+
+</div>
+
+<script type="text/javascript" src="js/copy.js"></script>

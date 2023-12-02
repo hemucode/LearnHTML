@@ -1,0 +1,77 @@
+<html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <title>IDE UI Concept</title>
+
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+    </style>
+ </head>
+
+
+    <header class="main" style="display: none;">
+        <div class="info">
+            <div class="title">Project title</div>
+            <div class="last-update">Last update: <span class="value">1 minute ago</span></div>
+        </div>
+        <div class="toolbar">
+            <div id="save-btn" class="action">Save</div>
+            <div class="action">Settings</div>
+        </div>
+    </header>
+    <div class="main-layout" id="htmlEditor">
+
+        <div class="splitter" data-splitter="yes"></div>
+        <div class="editors" data-tabs="yes">
+            <div class="tabs">
+                <div data-tab="html" class="tab tab-active">
+                    <span id="html-files" class="settings"></span>HTML
+                    <span id="html-filename" class="filename">(index.html)</span>
+
+                </div>
+
+                <div data-tab="css" class="tab css_tab">
+                    <span class="settings view"></span>Browser
+                    <span id="css-filename" class="filename"></span>
+                </div>
+
+            </div>
+            <div class="pages">
+                <div data-page="html" class="page page-active">
+                    <div class="editor-files" data-editor-files="html-editor" data-editor-files-menu="html-files" data-editor-files-filename="html-filename" data-editor-files-suffix="html">
+                        <textarea id="file-1" data-filename="index.html"></textarea>
+                        <textarea id="file-2" data-filename="text.html">&lt;h1&gt;Hello World!&lt;/h1&gt;</textarea>
+                    </div>
+                    <div id="html-editor" class="editor"></div>
+                </div>
+                <div data-page="css" class="page">
+                    <div class="editor-files"
+                         data-editor-files="css-editor"
+                         data-editor-files-menu="css-files"
+                         data-editor-files-filename="css-filename"
+                         data-editor-files-suffix="css">
+
+                    </div>
+                    <div class="result">
+                        <iframe id="iframe" src="about:blank"></iframe>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <footer class="status">
+
+    </footer>
+
+    <script type="text/javascript" src="ace.js"></script>
+    <script type="text/javascript" src="ext-language_tools.js"></script>
+    <script type="text/javascript" src="mode-html.js"></script>
+    <script type="text/javascript" src="index.js"></script>
+
+
+</html>

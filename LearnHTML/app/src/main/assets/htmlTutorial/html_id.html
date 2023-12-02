@@ -1,0 +1,154 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+<h1>HTML <span class="color_h1">id Attribute</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_classes.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_iframe.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">The HTML <code class="codehemu-codespan">id</code> attribute is used 
+to specify a unique id for an HTML element.</p>
+<p class="intro">You cannot have more than one element with the same id in an 
+HTML document.</p>
+<hr>
+
+<h2>Using The id Attribute</h2>
+<p>The <code class="codehemu-codespan">id</code> attribute specifies a unique id 
+for an HTML element. The value of the <code class="codehemu-codespan">id</code> 
+attribute must be unique within the HTML document.</p>
+<p>The <code class="codehemu-codespan">id</code> attribute is used to point 
+to a specific style declaration in a style sheet. It is also used by JavaScript to access and 
+manipulate the element with the specific id.</p>
+<p>The syntax for id is: write a hash character (#), followed by an id name. 
+Then, define the CSS properties within curly braces {}.</p>
+<p>In the following example we have an <code class="codehemu-codespan">&lt;h1&gt;</code> element that points to the 
+id name 
+"myHeader". This <code class="codehemu-codespan">&lt;h1&gt;</code> 
+element will be styled according to the <code class="codehemu-codespan">#myHeader</code> 
+style definition in the head section:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br>#myHeader <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; 
+  background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 40px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+  text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="myHeader"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>My 
+  Header<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_id_css" target="_self">
+ Try it Yourself »</a>
+</div>
+
+
+<div class="codehemu-panel codehemu-note">
+  <p><strong>Note:</strong> The id name is case sensitive!</p>
+  <p><strong>Note:</strong> The id name must contain at least one 
+  character, cannot start with a number, and must not contain whitespaces (spaces, tabs, 
+  etc.).</p>
+</div>
+<hr>
+
+<h2>Difference Between Class and ID</h2>
+<p>A 
+class name can be used by multiple HTML elements, while an id name must only be 
+used by one HTML element 
+within the page:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="cssselectorcolor" style="color:brown"><br><span class="commentcolor" style="color:green">/* Style the element with the id "myHeader" 
+  */</span><br>
+  <strong>#myHeader</strong> <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightblue<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; 
+  color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> black<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+  40px<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;text-align<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> center<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span><br><br><span class="commentcolor" style="color:green">/* Style all 
+  elements with the class name "city" */</span><br><strong>.city
+  </strong><span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> tomato<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> white<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp;&nbsp;padding<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 10px<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> <br></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/style<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  <br><span class="commentcolor" style="color:green">&lt;!-- An element with a unique id --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="myHeader"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>My 
+  Cities<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="commentcolor" style="color:green">&lt;!-- Multiple elements with same class --&gt;</span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London is the capital of England.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital of France.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br>
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">="city"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_id_class" target="_self">
+ Try it Yourself »</a>
+</div>
+
+
+
+<h2>HTML Bookmarks with ID and Links</h2>
+<p>HTML bookmarks are used to allow readers to jump to specific parts of a webpage.</p>
+<p>Bookmarks can be useful if your page is very long.</p>
+<p>To use a bookmark, you must first create it, and then add a link 
+to it.</p>
+<p>Then, when the link is clicked, the page will scroll to the location with the 
+bookmark.</p>
+<h2>Example</h2>
+<p>First, create a bookmark with the <code class="codehemu-codespan">id</code> attribute:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="attributecolor" style="color:red"> id<span class="attributevaluecolor" style="color:mediumblue">="C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Chapter 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<p>Then, add a link to the bookmark ("Jump to Chapter 4"), from within the same page:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="#C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jump to Chapter 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_id_bookmark" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<p>Or, add a link to the bookmark ("Jump to Chapter 4"), from another page:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="html_demo.html#C4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Jump to Chapter 4<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<hr>
+
+<h2>Using The id Attribute in JavaScript</h2>
+<p>The <code class="codehemu-codespan">id</code> attribute can also be used by JavaScript to perform 
+some tasks for that specific element.</p>
+<p>JavaScript can access an element with a specific id with the <code class="codehemu-codespan">getElementById()</code> method:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+  <p>Use the <code class="codehemu-codespan">id</code> attribute to manipulate text with JavaScript:</p>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="jscolor" style="color:black"><br><span class="jskeywordcolor" style="color:mediumblue">function</span> displayResult() {<br>&nbsp;&nbsp;document.<span class="jspropertycolor" style="color:black">getElementById</span>(<span class="jsstringcolor" style="color:brown">"myHeader"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Have a nice day!"</span>;<br>}<br><span class="jsnumbercolor" style="color:red">
+</span>  </span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/script<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_id_js" target="_self">
+ Try it Yourself »</a>
+</div>
+
+
+<h2>Chapter Summary</h2>
+<ul>
+<li>The <code class="codehemu-codespan">id</code> attribute is used to specify a unique id 
+for an HTML element</li>
+  <li>The value of the <code class="codehemu-codespan">id</code> 
+attribute must be unique within the HTML document</li>
+  <li>The <code class="codehemu-codespan">id</code> 
+  attribute is used by CSS and JavaScript to style/select a specific element</li>
+  <li>The value of the <code class="codehemu-codespan">id</code> 
+  attribute is case sensitive</li>
+  <li>The <code class="codehemu-codespan">id</code> 
+  attribute is also used to create HTML bookmarks</li>
+  <li>JavaScript can access an element with a specific id with the <code class="codehemu-codespan">getElementById()</code> 
+  method</li>
+</ul>
+<hr>
+
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_classes.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_iframe.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

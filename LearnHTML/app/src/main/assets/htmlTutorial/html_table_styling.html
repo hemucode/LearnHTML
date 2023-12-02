@@ -1,0 +1,344 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+<style>
+.table1, .table1 th, .table1 td, .table2, .table2 th, .table2 td, .table3, .table3 th, .table3 td  {
+  border:1px solid #282A35;
+  border:1px solid #fff;  
+  border-collapse: collapse;
+  font-size:12px
+}
+
+.table2 tr:nth-child(even) {
+  background-color: rgba(150, 212, 212,0.4);
+}
+
+.table1 td:nth-of-type(even){
+  background-color: rgba(150, 212, 212,0.4);
+}
+
+.table3 {
+  border:none;
+}
+
+.table3 th,.table3 td {
+  border:none;
+  border-bottom:1px solid rgba(150, 212, 212,1);
+}
+
+.table4, .table4 th, .table4 td {
+  border:1px solid #fff;
+}
+.tabletest2 {
+  font-size:15px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabletest2,
+.tabletest2 th,
+.tabletest2 td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabletest4 {
+  margin-top: 20px;
+  margin-bottom: 40px;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.tabletest4,
+.tabletest4 th,
+.tabletest4 td {
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.tabletest4 tr:hover {
+  background-color: #D6EEEE;
+}
+
+</style>
+<h1>HTML <span class="color_h1">Table Styling</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_table_colspan_rowspan.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_table_colgroup.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">Use CSS to make your tables look better.</p>
+<hr>
+
+<h2>HTML Table - Zebra Stripes</h2>
+
+<p>If you add a background color on every other table row, you will get a nice zebra stripes effect.</p>
+<table class="table2" style="width:60%;">
+<tbody><tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+</tbody></table>
+<p>To style every other table row element, use the <code class="codehemu-codespan">:nth-child(even)</code> 
+selector like this:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+tr:nth-child(even) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #D6EEEE<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>  </span></div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_zebra" target="_self">Try it Yourself »</a>
+</div>
+
+<div class="codehemu-panel codehemu-note">
+<p><b>Note:</b> If you use <code class="codehemu-codespan">(odd)</code> instead of <code class="codehemu-codespan">
+(even)</code>, the styling will occur on row 1,3,5 etc. instead of 2,4,6 etc.</p>
+</div>
+
+<hr>
+
+<h2>HTML Table - Vertical Zebra Stripes</h2>
+
+<p>To make vertical zebra stripes, style every other <em>column</em>, instead of every other 
+<em>row</em>.</p>
+<table class="table1" style="width:60%;">
+<tbody><tr>
+<td>1</td>
+<td>2</td>
+<td>3</td>
+<td>4</td>
+</tr>
+<tr>
+<td>5</td>
+<td>6</td>
+<td>7</td>
+<td>8</td>
+</tr>
+<tr>
+<td>9</td>
+<td>10</td>
+<td>11</td>
+<td>12</td>
+</tr>
+<tr>
+<td>13</td>
+<td>14</td>
+<td>15</td>
+<td>16</td>
+</tr>
+<tr>
+<td>17</td>
+<td>18</td>
+<td>19</td>
+<td>20</td>
+</tr>
+</tbody></table>
+<p>Set the <code class="codehemu-codespan">:nth-child(even)</code> for table data elements like this:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+  td:nth-child(even),
+  th:nth-child(even) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #D6EEEE<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>  </span></div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_zebra_vertical" target="_self">Try it Yourself »</a>
+</div>
+
+<div class="codehemu-panel codehemu-note">
+<p><b>Note:</b> Put the <code class="codehemu-codespan">:nth-child()</code> selector 
+on both <code class="codehemu-codespan">th</code> and <code class="codehemu-codespan">td</code> 
+elements if you want to have the styling on both headers and regular table 
+cells.</p>
+</div>
+
+
+<h2>Combine Vertical and Horizontal Zebra Stripes</h2>
+<p>You can combine the styling from the two examples above and you will have stripes on every other row and every other column.</p>
+<p>If you use a transparent color you will get an overlapping effect.</p>
+<table class="table1 table2 table4" style="width:60%;">
+<tbody><tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+</tbody></table>
+
+<p>Use an <code class="codehemu-codespan">rgba()</code> color to specify the transparency of the color:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+  tr:nth-child(even) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> rgba(150, 212, 212, 0.4)<span class="cssdelimitercolor" style="color:black">;</span></span><br>
+  </span><span class="cssdelimitercolor" style="color:black">}</span><br>
+  <br>th:nth-child(even),td:nth-child(even) <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> rgba(150, 
+  212, 212, 0.4)<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span>  </span></div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[2])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_table_zebra_combine" target="_self">Try it Yourself »</a>
+</div>
+
+<hr>
+
+<h2>Horizontal Dividers</h2>
+<table class="tabletest2">
+<thead>
+<tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Savings</th>
+</tr>
+</thead>
+<tbody>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+</tbody>
+</table>
+<p>If you specify borders only at the bottom of each table row, you will have a table with horizontal dividers.</p>
+
+<p>Add the <code class="codehemu-codespan">border-bottom</code> property to all 
+<code class="codehemu-codespan">tr</code> elements to get horizontal dividers:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+tr <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp;&nbsp;border-bottom<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 1px solid #ddd<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[3])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_table_border_divider2" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<h2>Hoverable Table</h2>
+<p>Use the <code class="codehemu-codespan">:hover</code> selector on
+<code class="codehemu-codespan">tr</code> to highlight table rows on mouse 
+over:</p>
+<table class="tabletest4">
+<tbody><tr>
+  <th>First Name</th>
+  <th>Last Name</th>
+  <th>Savings</th>
+</tr>
+  <tr>
+    <td>Peter</td>
+    <td>Griffin</td>
+    <td>$100</td>
+  </tr>
+  <tr>
+    <td>Lois</td>
+    <td>Griffin</td>
+    <td>$150</td>
+  </tr>
+  <tr>
+    <td>Joe</td>
+    <td>Swanson</td>
+    <td>$300</td>
+  </tr>
+</tbody></table>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+tr:hover <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> #D6EEEE<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+<button onclick="copy(document.querySelectorAll('.codehemu-code')[4])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a target="_self" href="../htmlEditor/index.html?filename=tryhtml_table_hover" class="codehemu-btn codehemu-margin-bottom">Try it Yourself »</a>
+</div>
+<hr>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_table_colspan_rowspan.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html_table_colgroup.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

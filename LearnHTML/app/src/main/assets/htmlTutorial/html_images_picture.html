@@ -1,0 +1,116 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+  <h1>HTML <span class="color_h1">&lt;picture&gt;</span> Element</h1>
+  <div class="codehemu-clear nextprev">
+  	<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+    <a class="codehemu-left codehemu-btn" href="html_images_background.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_favicon.html">Next ❯</a>
+  </div>
+  <hr>
+  <p class="intro">The HTML <code class="codehemu-codespan">&lt;picture&gt;</code> element allows
+    you to display different pictures for
+    different devices or screen sizes.</p>
+  <hr>
+  <img src="picture_example.jpg" style="max-width:100%">
+  <hr>
+
+  <h2>The HTML &lt;picture&gt; Element</h2>
+  <p>The HTML <code class="codehemu-codespan">&lt;picture&gt;</code> element gives web
+    developers more flexibility in
+    specifying image resources.</p>
+  <p>The <code class="codehemu-codespan">&lt;picture&gt;</code> element contains one or
+    more <code class="codehemu-codespan">&lt;source&gt;</code> elements, each referring
+    to different images through the <code class="codehemu-codespan">srcset</code>
+    attribute. This way the browser can choose the image that best
+    fits the current view and/or device.</p>
+  <p>Each <code class="codehemu-codespan">&lt;source&gt;</code> element has a
+    <code class="codehemu-codespan">media</code> attribute that defines when the image is the
+    most suitable.
+  </p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>Show different images for different screen sizes:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>picture<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> media<span class="attributevaluecolor" style="color:mediumblue">="(min-width: 650px)"</span> srcset<span class="attributevaluecolor" style="color:mediumblue">="img_food.jpg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      &nbsp;
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> media<span class="attributevaluecolor" style="color:mediumblue">="(min-width: 465px)"</span> srcset<span class="attributevaluecolor" style="color:mediumblue">="img_car.jpg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/picture<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[0])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_picture1" target="_self">Try it Yourself »</a>
+  </div>
+
+
+  <div class="codehemu-panel codehemu-note">
+    <p><strong>Note:</strong> Always specify an <code class="codehemu-codespan">&lt;img&gt;</code> element as the last child
+      element of the <code class="codehemu-codespan">&lt;picture&gt;</code> element. The <code class="codehemu-codespan">&lt;img&gt;</code> element is used by browsers that do
+      not support the <code class="codehemu-codespan">&lt;picture&gt;</code> element, or if none of the <code class="codehemu-codespan">&lt;source&gt;</code> tags match.</p>
+  </div>
+
+
+  <h2>When to use the Picture Element</h2>
+  <p>There are two main purposes for the <code class="codehemu-codespan">&lt;picture&gt;</code> element:</p>
+  <h3>1. Bandwidth</h3>
+  <p>If you have a small screen or device, it is not necessary to load a large
+    image file. The browser will use the first <code class="codehemu-codespan">&lt;source&gt;</code>
+    element with matching attribute values, and ignore any of the following
+    elements.</p>
+  <h3>2. Format Support</h3>
+  <p>Some browsers or devices may not support all image formats. By using the
+    <code class="codehemu-codespan">&lt;picture&gt;</code> element, you can add images of all
+    formats, and the browser will use the first format it recognizes, and ignore any
+    of the following elements.
+  </p>
+  <div class="codehemu-example">
+    <h3>Example</h3>
+    <p>The browser will use the first image format it recognizes:</p>
+    <div class="codehemu-code notranslate htmlHigh">
+      <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>picture<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor" style="color:mediumblue">="img_avatar.png"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> srcset<span class="attributevaluecolor" style="color:mediumblue">="img_girl.jpg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+      &nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="img_beatles.gif"</span>
+          alt<span class="attributevaluecolor" style="color:mediumblue">="Beatles"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:auto;"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/picture<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+    </div>
+    <button onclick="copy(document.querySelectorAll('.codehemu-code')[1])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+    <a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_images_picture_format" target="_self">Try it Yourself »</a>
+  </div>
+
+  <div class="codehemu-panel codehemu-note">
+    <p><strong>Note:</strong> The browser will use the first <code class="codehemu-codespan">&lt;source&gt;</code> element with matching attribute
+      values, and ignore any following <code class="codehemu-codespan">&lt;source&gt;</code> elements.</p>
+  </div>
+  <hr>
+
+  <h2>HTML Image Tags</h2>
+  <table class="ws-table-all notranslate">
+    <tbody>
+      <tr>
+        <th>Tag</th>
+        <th>Description</th>
+      </tr>
+      <tr>
+        <td><a>&lt;img&gt;</a></td>
+        <td>Defines an image</td>
+      </tr>
+      <tr>
+        <td><a>&lt;map&gt;</a></td>
+        <td>Defines an image map</td>
+      </tr>
+      <tr>
+        <td><a>&lt;area&gt;</a></td>
+        <td>Defines a clickable area inside an image map</td>
+      </tr>
+      <tr>
+        <td><a>&lt;picture&gt;</a></td>
+        <td>Defines a container for multiple image resources</td>
+      </tr>
+    </tbody>
+  </table>
+ 
+  <br>
+  <div class="codehemu-clear nextprev codehemu-center">
+    <a class="codehemu-left codehemu-btn" href="html_images_background.html">❮ Previous</a>
+    <a class="codehemu-right codehemu-btn" href="html_favicon.html">Next ❯</a>
+  </div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

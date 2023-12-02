@@ -1,0 +1,233 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+<div class="codehemu-col l10 m12" id="main">
+
+
+
+<h1>HTML <span class="color_h1">Video</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+
+<a class="codehemu-left codehemu-btn" href="html_media.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html5_audio.html">Next ❯</a>
+</div>
+<hr>
+<p class="intro">The HTML <code class="codehemu-codespan">&lt;video&gt;</code> element is used to 
+show a video on a web page.</p>
+<hr>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-padding codehemu-white notranslate">
+  <div style="text-align:center"> 
+  <video id="video1" style="width:600px;max-width:100%;" controls="">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+</div> 
+</div>
+
+</div>
+<hr>
+
+<h2>The HTML &lt;video&gt; Element</h2>
+<p>To show a video in HTML, use the <code class="codehemu-codespan">&lt;video&gt;</code> element:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>video<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="320"</span> height<span class="attributevaluecolor" style="color:mediumblue">="240"</span> controls</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="movie.mp4"</span> type<span class="attributevaluecolor" style="color:mediumblue">="video/mp4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="movie.ogg"</span> type<span class="attributevaluecolor" style="color:mediumblue">="video/ogg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+Your browser does not support the video tag.<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<hr>
+<h2>How it Works</h2>
+<p>The <code class="codehemu-codespan">controls</code> attribute adds video controls, like play, pause, and volume.</p>
+<p>It is a good idea to always include <code class="codehemu-codespan">width</code> and <code class="codehemu-codespan">height</code> attributes. If height and width are not set, the page 
+might flicker while the video loads.</p>
+<p>The <code class="codehemu-codespan">&lt;source&gt;</code> element allows you to specify alternative video 
+files which the browser may choose from. The browser will use the first recognized format.</p>
+<p>The text between the <code class="codehemu-codespan">&lt;video&gt;</code> and <code class="codehemu-codespan">&lt;/video&gt;</code> tags will only be displayed 
+in browsers that do not 
+support the <code class="codehemu-codespan">&lt;video&gt;</code> element.</p>
+<hr>
+
+<h2>HTML &lt;video&gt; Autoplay</h2>
+<p>To start a video automatically, use the <code class="codehemu-codespan">autoplay</code> attribute:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>video<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="320"</span> height<span class="attributevaluecolor" style="color:mediumblue">="240"</span> autoplay</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="movie.mp4"</span> type<span class="attributevaluecolor" style="color:mediumblue">="video/mp4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="movie.ogg"</span> type<span class="attributevaluecolor" style="color:mediumblue">="video/ogg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+Your browser does not support the video tag.<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+
+<div class="codehemu-panel codehemu-note">
+<p><strong>Note:</strong> Chromium browsers do not 
+allow autoplay in most cases. However, muted autoplay is always allowed.</p>
+</div>
+
+<p>Add <code class="codehemu-codespan">muted</code> after <code class="codehemu-codespan">
+autoplay</code> to let your video start playing automatically (but muted):</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>video<span class="attributecolor" style="color:red"> width<span class="attributevaluecolor" style="color:mediumblue">="320"</span> height<span class="attributevaluecolor" style="color:mediumblue">="240"</span> autoplay muted</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="movie.mp4"</span> type<span class="attributevaluecolor" style="color:mediumblue">="video/mp4"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>source<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="movie.ogg"</span> type<span class="attributevaluecolor" style="color:mediumblue">="video/ogg"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+Your browser does not support the video tag.<br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/video<span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+
+</div>
+<hr>
+
+
+
+
+<h2>HTML Video Formats</h2>
+<p>There are three supported video formats: MP4, WebM, and Ogg. The browser support for the different formats is:</p>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th style="width:25%">Browser</th>
+<th style="width:25%">MP4</th>
+<th style="width:25%">WebM</th>
+<th style="width:25%">Ogg</th>
+</tr>
+<tr>
+<td>Edge</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Chrome</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Firefox</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+<tr>
+<td>Safari</td>
+<td>YES</td>
+<td>YES</td>
+<td>NO</td>
+</tr>
+<tr>
+<td>Opera</td>
+<td>YES</td>
+<td>YES</td>
+<td>YES</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>HTML Video - Media Types</h2>
+<table class="ws-table-all notranslate" id="table1">
+<tbody><tr>
+<th style="width:50%">File Format</th>
+<th style="width:50%">Media Type</th>
+</tr>
+<tr>
+<td>MP4</td>
+<td>video/mp4</td>
+</tr>
+<tr>
+<td>WebM</td>
+<td>video/webm</td>
+</tr>
+<tr>
+<td>Ogg</td>
+<td>video/ogg</td>
+</tr>
+</tbody></table>
+<hr>
+
+<h2>HTML Video - Methods, Properties, and Events</h2>
+<p>The HTML DOM defines methods, properties, and events for the <code class="codehemu-codespan">&lt;video&gt;</code> element.</p>
+<p>This allows you to load, play, and pause videos, as well as setting duration and volume.</p>
+<p>There are also DOM events that can notify you when a video begins to play, is paused, etc.</p>
+<div class="codehemu-example">
+<h3>Example: Using JavaScript</h3>
+  <br>
+  <div style="text-align:center;" class="codehemu-white codehemu-padding-16"> 
+  <button onclick="playPause()">Play/Pause</button> 
+  <button onclick="makeBig()">Big</button>
+  <button onclick="makeSmall()">Small</button>
+  <button onclick="makeNormal()">Normal</button>
+  <br><br> 
+  <video id="video2" width="480" style="max-width:100%">
+    <source src="mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML5 video.
+  </video>
+<script> 
+var myVideo = document.getElementById("video2"); 
+function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+function makeBig() {
+    myVideo.width = 600;
+} 
+
+function makeSmall() { 
+    myVideo.width = 320; 
+} 
+
+function makeNormal() { 
+    myVideo.width = 480;
+} 
+</script> 
+
+</div>
+
+</div>
+
+<hr>
+
+<h2>HTML Video Tags</h2>
+<table class="ws-table-all notranslate">
+<tbody><tr>
+<th style="width:20%">Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a >&lt;video&gt;</a></td>
+<td>Defines a video or movie</td>
+</tr>
+<tr>
+<td><a>&lt;source&gt;</a></td>
+<td>Defines multiple media resources for media elements, such as &lt;video&gt; and &lt;audio&gt;</td>
+</tr>
+<tr>
+<td><a >&lt;track&gt;</a></td>
+<td>Defines text tracks in media players</td>
+</tr>
+</tbody></table>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+<a class="codehemu-left codehemu-btn" href="html_media.html">❮ Previous</a>
+<a class="codehemu-right codehemu-btn" href="html5_audio.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>

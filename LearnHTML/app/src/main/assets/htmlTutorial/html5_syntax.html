@@ -1,0 +1,447 @@
+<link rel="stylesheet" href="../stylesheet/style.css">
+
+<div class="codehemu-col l10 m12" id="main">
+<h1>HTML <span class="color_h1">Style Guide</span></h1>
+<div class="codehemu-clear nextprev">
+<a class="codehemu-left codehemu-btn codehemu-margin5" href="main_manu.html">☰</a>
+  <a class="codehemu-left codehemu-btn" href="html5_semantic_elements.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_entities.html">Next ❯</a>
+</div>
+<hr>
+
+<p class="intro">A consistent, clean, and tidy HTML code makes it easier for others to read and understand your code. </p>
+<p class="intro">Here are some guidelines and tips for creating good HTML code.</p>
+<hr>
+
+
+<h2>Always Declare Document Type</h2>
+<p>Always declare the document type as the first line in your document.</p>
+<p>The correct document type for HTML is:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+
+<h2>Use Lowercase Element Names</h2>
+<p>HTML allows mixing uppercase and lowercase letters in element names.</p>
+<p>However, we recommend using lowercase element names, because:</p>
+<ul>
+ <li>Mixing uppercase and lowercase names looks bad</li>
+ <li>Developers normally use lowercase names</li>
+ <li>Lowercase looks cleaner</li>
+ <li>Lowercase is easier to write</li>
+</ul>
+
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>P<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/P<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/BODY<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<hr>
+<h2>Close All HTML Elements</h2>
+<p>In HTML, you do not have to close all elements (for example the <code class="codehemu-codespan">&lt;p&gt;</code> element). </p>
+<p>However, we strongly recommend closing all HTML elements, like this:</p>
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>section<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/section<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>Use Lowercase Attribute Names</h2>
+<p>HTML allows mixing uppercase and lowercase letters in attribute names.</p>
+<p>However, we recommend using lowercase attribute names, because:</p>
+<ul>
+ <li>Mixing uppercase and lowercase names looks bad</li>
+ <li>Developers normally use lowercase names</li>
+ <li>Lowercase looks cleaner</li>
+ <li>Lowercase is easier to write</li>
+</ul>
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> href<span class="attributevaluecolor" style="color:mediumblue">="https://www.codehemu.com/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+  <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>a<span class="attributecolor" style="color:red"> HREF<span class="attributevaluecolor" style="color:mediumblue">="https://www.codehemu.com/"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>Visit our HTML tutorial<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/a<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>Always Quote Attribute Values</h2>
+<p>HTML allows attribute values without quotes.</p>
+<p>However, we recommend quoting attribute values, because:</p>
+<ul>
+  <li>Developers normally quote attribute values</li>
+  <li>Quoted values are easier to read</li>
+  <li>You MUST use quotes if the value contains spaces</li>
+</ul>
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="attributecolor" style="color:red"> 
+    class<span class="attributevaluecolor" style="color:mediumblue">="striped"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">=striped</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Very bad:</h3>
+  <p>This will not work, because the value contains spaces:</p>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="attributecolor" style="color:red"> class<span class="attributevaluecolor" style="color:mediumblue">=table </span>striped</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>Always Specify alt, width, and height for Images</h2>
+<p>Always specify the <code class="codehemu-codespan">alt</code> attribute for images. This attribute is important if the image 
+for some reason cannot be displayed.</p>
+<p>Also, always define the <code class="codehemu-codespan">width</code> and <code class="codehemu-codespan">
+height</code> of images. This reduces flickering, because the browser can reserve space for 
+the image before loading.</p>
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> 
+    src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span> alt<span class="attributevaluecolor" style="color:mediumblue">="HTML5"</span> style<span class="attributevaluecolor" style="color:mediumblue">="width:128px;height:128px"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>img<span class="attributecolor" style="color:red"> 
+    src<span class="attributevaluecolor" style="color:mediumblue">="html5.gif"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>Spaces and Equal Signs</h2>
+<p>HTML allows spaces around equal signs. But space-less is easier to read and 
+groups entities better together.</p>
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> 
+    rel <span class="attributevaluecolor" style="color:mediumblue">= "stylesheet"</span> href <span class="attributevaluecolor" style="color:mediumblue">= "styles.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div></div>
+<hr>
+
+<h2>Avoid Long Code Lines</h2>
+<p>When using an HTML editor, it is NOT convenient to scroll right and left to read the HTML code.</p>
+<p>Try to avoid too long code lines.</p>
+<hr>
+
+<h2>Blank Lines and Indentation</h2>
+<p>Do not add blank lines, spaces, or indentations without a reason.</p>
+<p>For readability, add blank lines to separate large or logical code blocks.</p>
+<p>For readability, add two spaces of indentation. Do not use the tab key.</p>
+<div class="codehemu-example">
+<h3>Good:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan, the 
+    center of the Greater Tokyo Area, and the most 
+    populous metropolitan area in the world.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London is the capital city of England. It is the most populous city 
+  in the United Kingdom.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital of France. The Paris area is one of the 
+  largest population centers in Europe.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+
+<div class="codehemu-example">
+<h3>Bad:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Famous Cities<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo is the capital of Japan, the 
+    center of the Greater Tokyo Area, and the most 
+    populous metropolitan area in the world.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London 
+  is the capital city of England. It is the most populous city in the United 
+  Kingdom.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h2<span class="tagcolor" style="color:mediumblue">&gt;</span></span><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris is the capital 
+  of France. The Paris area is one of the largest population centers in Europe.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<div class="codehemu-example">
+  <h3>Good Table Example:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>table<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Name<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>th<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Description<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/th<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp;
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>A<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Description of A<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp;
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>B<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+&nbsp;&nbsp;&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>td<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Description of B<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/td<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/tr<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/table<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<div class="codehemu-example">
+<h3>Good List Example:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>London<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Paris<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    &nbsp; 
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>li<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Tokyo<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/li<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/ul<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+
+<h2>Never Skip the &lt;title&gt; Element</h2>
+<p>The <code class="codehemu-codespan">&lt;title&gt;</code> element is required in HTML.</p>
+<p>The contents of a page title is very important for search engine optimization 
+(SEO)! The page title is used by search engine algorithms to decide the order 
+when listing pages in search results.</p>
+<p>The <code class="codehemu-codespan">&lt;title&gt;</code> element:</p>
+<ul>
+  <li>defines a title in the browser toolbar</li>
+  <li>provides a title for the page when it is added to favorites</li>
+  <li>displays a title for the page in search-engine results</li>
+</ul>
+<p>So, try to make the title as accurate and meaningful as possible:&nbsp;</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>HTML 
+    Style Guide and Coding Conventions<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+<h2>Omitting &lt;html&gt; and &lt;body&gt;?</h2>
+<p>An HTML page will validate without the <code class="codehemu-codespan">&lt;html&gt;</code> and 
+<code class="codehemu-codespan">&lt;body&gt;</code> tags:</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br>
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+  <button onclick="copy(document.querySelectorAll('.codehemu-code')[19])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_syntax_nobody" target="_self">Try it Yourself »</a>
+</div>
+
+<p>However, we strongly recommend to always add the <code class="codehemu-codespan">&lt;html&gt;</code> and 
+<code class="codehemu-codespan">&lt;body&gt;</code> tags!</p>
+<p>Omitting <code class="codehemu-codespan">&lt;body&gt;</code> can produce errors in older browsers.</p>
+<p>Omitting <code class="codehemu-codespan">&lt;html&gt;</code> and <code class="codehemu-codespan">&lt;body&gt;</code> 
+can also crash DOM and XML software.</p>
+<hr>
+<h2>Omitting &lt;head&gt;?</h2>
+<p>The HTML &lt;head&gt; tag can also 
+be omitted.</p>
+<p>Browsers will add all elements before <code class="codehemu-codespan">&lt;body&gt;</code>, to a default <code class="codehemu-codespan">&lt;head&gt;</code> 
+element.</p>
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+     <button onclick="copy(document.querySelectorAll('.codehemu-code')[20])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_syntax_nohead" target="_self">Try it Yourself »</a>
+</div>
+<p>However, we recommend using the <code class="codehemu-codespan">&lt;head&gt;</code> tag.</p>
+
+<hr>
+
+<h2>Close Empty HTML Elements?</h2>
+<p>In HTML, it is optional to close empty elements.</p>
+<div class="codehemu-example">
+<h3>Allowed:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> 
+    charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<div class="codehemu-example">
+<h3>Also Allowed:</h3>
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="utf-8"</span> /</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<p>If you expect XML/XHTML software to access your page, keep the 
+closing slash (/), because it is required in XML and XHTML.</p>
+
+<hr>
+
+<h2>Add the lang Attribute</h2>
+<p>You should always include the <code class="codehemu-codespan">lang</code> attribute 
+inside the <code class="codehemu-codespan">&lt;html&gt;</code> tag, to declare the 
+language of the Web page. This is meant to assist search engines and browsers.</p>
+<div class="codehemu-example">
+  <h3>Example</h3>
+<div class="codehemu-code notranslate htmlHigh">
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> lang<span class="attributevaluecolor" style="color:mediumblue">="en-us"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+    <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a 
+    heading<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/h1<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>p<span class="tagcolor" style="color:mediumblue">&gt;</span></span>This is a paragraph.<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/p<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/body<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/html<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+     <button onclick="copy(document.querySelectorAll('.codehemu-code')[23])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_syntax_body" target="_self">Try it Yourself »</a>
+</div>
+
+
+<hr>
+
+<h2>Meta Data</h2>
+<p>To ensure proper interpretation and correct search engine indexing, both the language and 
+the character encoding <code class="codehemu-codespan">&lt;meta charset="<em>charset</em>"&gt;</code> should be defined as early as possible in an HTML document:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>!DOCTYPE<span class="attributecolor" style="color:red"> html</span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>html<span class="attributecolor" style="color:red"> 
+    lang<span class="attributevaluecolor" style="color:mediumblue">="en-us"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>head<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>&nbsp; <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> charset<span class="attributevaluecolor" style="color:mediumblue">="UTF-8"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span><br>
+  &nbsp;
+ <span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>title<span class="tagcolor" style="color:mediumblue">&gt;</span></span>Page Title<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/title<span class="tagcolor" style="color:mediumblue">&gt;</span></span><br><span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>/head<span class="tagcolor" style="color:mediumblue">&gt;</span></span> </div>
+</div>
+<hr>
+
+<h2>Setting The Viewport</h2>
+
+<p>The viewport is the user's visible area of a web page. It varies with the device 
+- it will be smaller on a mobile phone than on a computer screen.</p>
+<p>You should include the following <code class="codehemu-codespan">&lt;meta&gt;</code> element in all your web pages:</p>
+<div class="codehemu-code codehemu-border notranslate htmlHigh">
+<div>
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>meta<span class="attributecolor" style="color:red"> name<span class="attributevaluecolor" style="color:mediumblue">="viewport"</span> content<span class="attributevaluecolor" style="color:mediumblue">="width=device-width, initial-scale=1.0"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+</div>
+ </div>
+<p>This gives the browser instructions on how 
+to control the page's dimensions and scaling.</p>
+<p>The <code class="codehemu-codespan">width=device-width</code> part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).</p>
+<p>The <code class="codehemu-codespan">initial-scale=1.0</code> part sets the initial zoom level when the page is first loaded by the browser.</p>
+<p>Here is an example of a web page <em>without</em> the viewport meta tag, and the same web page <em>with</em> the viewport meta tag:</p>
+<div class="codehemu-note codehemu-panel">
+<p><strong>Tip:</strong> If you are browsing this page with a phone or a tablet, you can click on the two links below to see the difference.</p>
+</div>
+<br>
+<div class="codehemu-row" style="text-align:center;">
+  <div class="codehemu-half">
+    <a target="_self" href="example_withoutviewport.htm"><br><br><b>Without the 
+viewport meta tag</b></a>
+   <br>
+    <br>
+  </div>
+  <div class="codehemu-half">
+    <a target="_self" href="example_withviewport.htm"><br><br><b>With the 
+viewport meta tag</b></a>
+    <br>
+    <br>
+  </div>  
+</div>
+<hr>
+
+<h2>HTML Comments</h2>
+<p>Short comments should be written on one line, like this:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+<span class="commentcolor" style="color:green">&lt;!-- This is a comment --&gt;</span>
+ </div>
+</div>
+<p>Comments that spans more than one line, should be written like this:</p>
+<div class="codehemu-example">
+ <div class="codehemu-code notranslate htmlHigh">
+<span class="commentcolor" style="color:green">&lt;!-- <br>&nbsp; This is a long comment example. This is 
+  a long comment example.<br>&nbsp; This is a 
+  long comment example. This is a long comment example.<br>--&gt;</span>
+ </div>
+</div>
+<p>Long comments are easier to observe if they are indented with two spaces.</p>
+<hr>
+
+<h2>Using Style Sheets</h2>
+<p>Use simple syntax for linking to style sheets (the <code class="codehemu-codespan">
+type</code> attribute is not necessary):</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>link<span class="attributecolor" style="color:red"> rel<span class="attributevaluecolor" style="color:mediumblue">="stylesheet"</span> href<span class="attributevaluecolor" style="color:mediumblue">="styles.css"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<p>Short CSS rules can be written compressed, like this:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+p.intro <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red">font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>Verdana<span class="cssdelimitercolor" style="color:black">;</span></span>font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span>16em<span class="cssdelimitercolor" style="color:black">;</span></span></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+</div>
+
+<p>Long CSS rules should be written over multiple lines:</p>
+<div class="codehemu-example">
+<div class="codehemu-code notranslate cssHigh"><span class="cssselectorcolor" style="color:brown">
+body <span class="cssdelimitercolor" style="color:black">{</span><span class="csspropertycolor" style="color:red"><br>&nbsp; background-color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> lightgrey<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-family<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> "Arial 
+Black", Helvetica, sans-serif<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; font-size<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 16em<span class="cssdelimitercolor" style="color:black">;</span></span><br>&nbsp; color<span class="csspropertyvaluecolor" style="color:mediumblue"><span class="cssdelimitercolor" style="color:black">:</span> 
+black<span class="cssdelimitercolor" style="color:black">;</span></span><br></span><span class="cssdelimitercolor" style="color:black">}</span> </span></div>
+</div>
+
+<ul>
+ <li>Place the opening bracket on the same line as the selector</li>
+ <li>Use one space before the opening bracket</li>
+ <li>Use two spaces of indentation</li>
+ <li>Use semicolon after each property-value pair, including the last</li>
+ <li>Only use quotes around values if the value contains spaces</li>
+ <li>Place the closing bracket on a new line, without leading spaces</li>
+</ul>
+<hr>
+
+<h2>Loading JavaScript in HTML</h2>
+<p>Use simple syntax for loading external scripts (the <code class="codehemu-codespan">
+type</code> attribute is not necessary):</p>
+
+<div class="codehemu-example">
+<div class="codehemu-code notranslate htmlHigh">
+<span class="tagnamecolor" style="color:brown"><span class="tagcolor" style="color:mediumblue">&lt;</span>script<span class="attributecolor" style="color:red"> src<span class="attributevaluecolor" style="color:mediumblue">="myscript.js"</span></span><span class="tagcolor" style="color:mediumblue">&gt;</span></span>
+ </div>
+</div>
+<hr>
+<h2>Accessing HTML Elements with JavaScript</h2>
+<p>Using "untidy" HTML code can result in JavaScript errors.</p>
+<p>These two JavaScript statements will produce different results:</p>
+
+<div class="codehemu-example">
+<h3>Example</h3>
+<div class="codehemu-code notranslate jsHigh"><span class="jscolor" style="color:black"><span class="jsnumbercolor" style="color:red">
+</span>  getElementById(<span class="jsstringcolor" style="color:brown">"Demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> = <span class="jsstringcolor" style="color:brown">"Hello"</span>;<br><br>getElementById(<span class="jsstringcolor" style="color:brown">"demo"</span>).<span class="jspropertycolor" style="color:black">innerHTML</span> <span class="jsnumbercolor" style="color:red">
+</span>  = <span class="jsstringcolor" style="color:brown">"Hello"</span>;<span class="jsnumbercolor" style="color:red">
+</span> </span></div>
+ <button onclick="copy(document.querySelectorAll('.codehemu-code')[32])" class="codehemu-btn codehemu-margin-bottom">❏ Copy</button>
+<a class="codehemu-btn codehemu-margin-bottom" href="../htmlEditor/index.html?filename=tryhtml_syntax_javascript" target="_self">Try it Yourself »</a>
+</div>
+
+
+<h2>Use Lower Case File Names</h2>
+<p>Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as 
+"London.jpg". </p>
+<p>Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as 
+"London.jpg".</p>
+<p>If you use a mix of uppercase and lowercase, you have to be aware of this.</p>
+<p>If you move from a case-insensitive to a case-sensitive server, even small 
+errors will break your web!</p>
+<p>To avoid these problems, always use lowercase file names!</p>
+<hr>
+
+<h2>File Extensions</h2>
+<p>HTML files should have a <strong>.html</strong> extension (<strong>.htm</strong> is allowed).</p>
+<p>CSS files should have a <strong>.css</strong> extension.</p>
+<p>JavaScript files should have a <strong>.js</strong> extension.</p>
+<hr>
+
+<h2>Differences Between .htm and .html?</h2>
+<p>There is no difference between the .htm and .html file extensions!</p>
+<p>Both will be 
+treated as HTML by any web browser and web server.</p>
+<hr>
+
+<h2>Default Filenames</h2>
+<p>When a URL does not specify a filename at the end (like "https://www.codehemu.com/"), 
+the server just adds a default filename, such as "index.html", 
+"index.htm", "default.html", or "default.htm".</p>
+<p>If your server is configured only with "index.html" as the default filename, your 
+file must be named "index.html", and not "default.html".</p>
+<p>However, servers can be configured with more than one default filename; 
+usually you can set up as many default filenames as you want.</p>
+
+<br>
+<div class="codehemu-clear nextprev codehemu-center">
+  <a class="codehemu-left codehemu-btn" href="html5_semantic_elements.html">❮ Previous</a>
+  <a class="codehemu-right codehemu-btn" href="html_entities.html">Next ❯</a>
+</div>
+
+
+</div>
+<script type="text/javascript" src="js/copy.js"></script>
